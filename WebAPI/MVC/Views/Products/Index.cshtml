@@ -1,0 +1,49 @@
+﻿@model IEnumerable<BusinessLayer.Product>
+
+@{
+    ViewData["Title"] = "Shop";
+}
+<!-- shop section -->
+
+<section class="shop_section layout_padding">
+    <div class="container">
+        <div class="row">
+            @{
+                int counter = 0;
+            }
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="javascript:void(0)">
+                            <div class="img-box">
+                                <img src="images/p@(counter+1).png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h6>
+                                    @Html.DisplayFor(itemName => item.Name)
+                                </h6>
+                                <h6>
+                                    Price
+                                    <span>
+                                        $@Html.DisplayFor(itemName => item.Price)
+                                    </span>
+                                </h6>
+                            </div>
+                            @if (counter <= 6)
+                            {
+                                <div class="new">
+                                    <span>New</span>
+                                </div>
+                            }
+                        </a>
+                    </div>
+                </div>
+                ++counter;
+            }
+        </div>
+    </div>
+</section>
+
+<!-- end shop section -->
+

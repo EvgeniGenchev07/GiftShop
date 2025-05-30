@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AUserManager_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002Econfig_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F1622b8f95d27187bc1fb39bac49bd64e928773df4fda6fcf6271680be54a2_003FUserManager_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7ba0c3c0_002D6d80_002D49d9_002D84d4_002Dabf50480fa05/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestManager" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::EC12C17E-A21A-413A-B118-60FFC6AD02C1::net8.0::TestLayer.TestManager&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::EC12C17E-A21A-413A-B118-60FFC6AD02C1::net8.0::TestLayer.ProductContextTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::EC12C17E-A21A-413A-B118-60FFC6AD02C1::net8.0::TestLayer.OrderContextTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::EC12C17E-A21A-413A-B118-60FFC6AD02C1::net8.0::TestLayer.FeedbackContextTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

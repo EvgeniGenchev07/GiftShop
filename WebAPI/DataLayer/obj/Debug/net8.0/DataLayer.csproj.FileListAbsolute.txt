@@ -1,0 +1,53 @@
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.deps.json
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.runtimeconfig.json
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.dll
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.pdb
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/BusinessLayer.dll
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/BusinessLayer.pdb
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.AssemblyReference.cache
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.AssemblyInfoInputs.cache
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.AssemblyInfo.cs
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.CoreCompileInputs.cache
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.sourcelink.json
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.Up2Date
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.dll
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/refint/DataLayer.dll
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.pdb
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.genruntimeconfig.cache
+Z:/ProjectsW/Разработка на софтуер/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/ref/DataLayer.dll
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.deps.json
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.runtimeconfig.json
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.dll
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.pdb
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/BusinessLayer.dll
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/BusinessLayer.pdb
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.AssemblyReference.cache
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.AssemblyInfoInputs.cache
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.AssemblyInfo.cs
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.CoreCompileInputs.cache
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.sourcelink.json
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.Up2Date
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.dll
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/refint/DataLayer.dll
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.pdb
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.genruntimeconfig.cache
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/ref/DataLayer.dll
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.deps.json
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.runtimeconfig.json
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.dll
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/DataLayer.pdb
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/BusinessLayer.dll
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/bin/Debug/net8.0/BusinessLayer.pdb
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.AssemblyReference.cache
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.AssemblyInfoInputs.cache
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.AssemblyInfo.cs
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.CoreCompileInputs.cache
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.csproj.Up2Date
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.dll
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/refint/DataLayer.dll
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.pdb
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/DataLayer.genruntimeconfig.cache
+/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/obj/Debug/net8.0/ref/DataLayer.dll
