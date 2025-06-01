@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fNlnFU8p5tc=",
+  "dgSpecHash": "A626+2dTPEc=",
   "success": true,
   "projectFilePath": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/MVC.csproj",
   "expectedPackageFiles": [
@@ -148,7 +148,7 @@
     "/home/evgeni/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/home/evgeni/.nuget/packages/system.threading.tasks.dataflow/7.0.0/system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "/home/evgeni/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512",
-    "/home/evgeni/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512"
+    "/home/evgeni/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.16/microsoft.netcore.app.host.linux-x64.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }
