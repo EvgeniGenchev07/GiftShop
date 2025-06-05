@@ -1,0 +1,137 @@
+@page
+@model OrderSuccess
+@{
+}
+
+<style>
+    :root {
+        --primary: #4361ee;
+        --success: #4cc9f0;
+        --text: #2b2d42;
+        --light: #f8f9fa;
+    }
+
+    body {
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background-color: #f5f7fa;
+        color: var(--text);
+    }
+
+    .confirmation-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .confirmation-card {
+        background: white;
+        border-radius: 16px;
+        padding: 3rem 2rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .success-icon {
+        font-size: 5rem;
+        color: var(--success);
+        margin-bottom: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--primary);
+    }
+
+    .order-details {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        text-align: left;
+    }
+
+    .detail-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+    }
+
+    .detail-label {
+        font-weight: 600;
+        color: #666;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: var(--primary);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 1rem;
+        transition: all 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #3a0ca3;
+        transform: translateY(-2px);
+    }
+
+    .btn-outline {
+        background: white;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        margin-right: 1rem;
+    }
+
+    .btn-outline:hover {
+        background: #f0f4ff;
+    }
+</style>
+
+<div class="confirmation-container">
+    <div class="confirmation-card">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <h1>Order Confirmed!</h1>
+        <p>Thank you for your purchase. Your order has been received and is being processed.</p>
+
+        <div class="order-details">
+            <div class="detail-row">
+                <span class="detail-label">Order Number:</span>
+                <span>@Model.OrderId</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Date:</span>
+                <span>@DateTime.Now.ToString("MMMM dd, yyyy")</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Total:</span>
+                <span>@Model.TotalAmount.ToString("C")</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Payment Method:</span>
+                <span>@Model.PaymentMethod</span>
+            </div>
+        </div>
+
+        <p>We've sent a confirmation email to <strong>@Model.Email</strong> with your order details.</p>
+
+        <div class="action-buttons">
+            <a href="/" class="btn btn-outline">
+                <i class="fas fa-shopping-bag"></i> Continue Shopping
+            </a>
+            <a href="/Account/Orders" class="btn">
+                <i class="fas fa-clipboard-list"></i> View Orders
+            </a>
+        </div>
+        <script>
+            sessionStorage.removeItem("basket");
+        </script>
+    </div>
+</div>

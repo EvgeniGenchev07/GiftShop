@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/MVC.n9dr0253rs.bundle.scp.css"
     },
     {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
+      "PackagePath": "staticwebassets/css/bascket.css"
+    },
+    {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/font-awesome.min.css",
       "PackagePath": "staticwebassets/css/font-awesome.min.css"
     },

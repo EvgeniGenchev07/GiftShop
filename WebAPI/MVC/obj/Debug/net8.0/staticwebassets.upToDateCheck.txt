@@ -3,7 +3,6 @@ wwwroot\css\responsive.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\css\style.css.map
-wwwroot\favicon.ico
 wwwroot\fonts\fontawesome-webfont.ttf
 wwwroot\fonts\fontawesome-webfont.woff
 wwwroot\fonts\fontawesome-webfont.woff2

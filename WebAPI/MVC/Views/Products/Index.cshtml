@@ -3,8 +3,8 @@
 @{
     ViewData["Title"] = "Shop";
 }
-<!-- shop section -->
 
+<!-- shop section -->
 <section class="shop_section layout_padding">
     <div class="container">
         <div class="row">
@@ -15,35 +15,50 @@
             {
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="box">
-                        <a href="javascript:void(0)">
+                        <a href="javascript:void(0)" class="products" data-id="@item.Id">
                             <div class="img-box">
-                                <img src="images/p@(counter+1).png" alt="">
+                                <img src="images/p@(counter + 1).png" alt="@item.Name">
                             </div>
                             <div class="detail-box">
-                                <h6>
-                                    @Html.DisplayFor(itemName => item.Name)
-                                </h6>
-                                <h6>
-                                    Price
-                                    <span>
-                                        $@Html.DisplayFor(itemName => item.Price)
-                                    </span>
-                                </h6>
+                                <h6>@item.Name</h6>
+                                <h6>Price <span>$@item.Price</span></h6>
                             </div>
                             @if (counter <= 6)
                             {
-                                <div class="new">
-                                    <span>New</span>
-                                </div>
+                                <div class="new"><span>New</span></div>
                             }
                         </a>
                     </div>
                 </div>
-                ++counter;
+                counter++;
             }
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll(".products").forEach(el => {
+            el.addEventListener("click", () => {
+                const basket = sessionStorage.getItem("basket");
+                const product_id = el.getAttribute("data-id");
+                if (basket) {
+                    const object = JSON.parse(basket);
+                    console.log(object);
+                    const productIndex = object.findIndex(p=>p.id == product_id);
+                    console.log(productIndex);
+                    if(productIndex == -1){
+                        object.push({id:product_id,quantity:1})
+                    }else{
+                        console.log(object[productIndex])
+                        object[productIndex].quantity +=1;
+                    }
+                    console.log(object)
+                    sessionStorage.setItem("basket", JSON.stringify(object) );
+                } else {
+                    sessionStorage.setItem("basket", JSON.stringify([{id:product_id,quantity:1}]));
+                }
+                console.log(basket);
+            });
+        });
+    </script>
 </section>
-
 <!-- end shop section -->
-

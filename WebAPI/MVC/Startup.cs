@@ -38,12 +38,18 @@ namespace MVC
             //services.AddScoped(typeof(MVCDbContext));
 
             services.AddDbContext<GiftShopDbContext>(options =>
-                options.UseSqlite("Data Source=../DataLayer/gift_shop.db3"));
+                options.UseSqlite("Data Source=../DataLayer/gift_shop.db3").EnableSensitiveDataLogging());
 
             services.AddIdentity<User, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<GiftShopDbContext>()
                 .AddDefaultTokenProviders();
-
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -96,7 +102,7 @@ namespace MVC
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthentication();

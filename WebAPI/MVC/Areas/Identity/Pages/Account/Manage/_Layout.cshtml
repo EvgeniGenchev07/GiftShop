@@ -3,7 +3,13 @@
 
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
+@inject IHttpContextAccessor HttpContextAccessor
 
+
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,47 +25,47 @@
 <body>
 <div class="hero_area">
     <!-- header section starts -->
-    <header class="header_section">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                <span>Giftos</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class=""></span>
-            </button>
+    <div class="hero_area">
+        <!-- header section starts -->
+        <header class="header_section">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <span>Giftos</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Products" asp-action="Index">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="WhyUs" asp-action="Index">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Feedbacks" asp-action="Index">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Contacts" asp-action="Index">Contact Us</a>
-                    </li>
-                    <partial name="_LoginPartial"/>
-                </ul>
-                <div class="user_option">
-                    <a class="" asp-controller="Users" asp-action="Login">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <span>Login</span>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item @(currentController == "Home" && currentAction == "Index" ? "active" : "")">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item @(currentController == "Products" ? "active" : "")">
+                            <a class="nav-link" asp-controller="Products" asp-action="Index">Shop</a>
+                        </li>
+                        <li class="nav-item @(currentController == "WhyUs" ? "active" : "")">
+                            <a class="nav-link" asp-controller="WhyUs" asp-action="Index">Why Us</a>
+                        </li>
+                        <li class="nav-item @(currentController == "Feedbacks" ? "active" : "")">
+                            <a class="nav-link" asp-controller="Feedbacks" asp-action="Index">Testimonial</a>
+                        </li>
+                        <li class="nav-item @(currentController == "Contacts" ? "active" : "")">
+                            <a class="nav-link" asp-controller="Contacts" asp-action="Index">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="user_option">
+                        <a asp-controller="Orders" asp-action="Create">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        </a>
+                        <partial name="_LoginPartial"/>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+        </div>
 </div>
     <div class="container">
         <main role="main" class="pb-3">

@@ -12,6 +12,7 @@ namespace DataLayer
     public class GiftShopDbContext:IdentityDbContext<User>
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<OrderedProduct> OrderedProducts { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Feedback> Feedbacks { get; set; }
 
@@ -30,9 +31,10 @@ namespace DataLayer
                 u.HasMany(u => u.Orders)
                 .WithOne(o => o.User);
             });
+            modelBuilder.Entity<OrderedProduct>().HasOne(p => p.Product).WithMany();
             modelBuilder.Entity<Order>()
                 .HasOne(u => u.User)
-                .WithMany(u => u.Orders);
+                .WithMany(u => u.Orders).IsRequired();
             base.OnModelCreating(modelBuilder);
         }
     }

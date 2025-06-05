@@ -46,17 +46,32 @@ namespace DataLayer.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Address")
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PaymentMethod")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ReceiverAddress")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PhoneNumber")
+                    b.Property<string>("ReceiverEmail")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ReceiverName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ReceiverPhoneNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal>("ShippingCost")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -67,6 +82,30 @@ namespace DataLayer.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("BusinessLayer.OrderedProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderedProducts");
                 });
 
             modelBuilder.Entity("BusinessLayer.Product", b =>
@@ -85,9 +124,6 @@ namespace DataLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
@@ -95,8 +131,6 @@ namespace DataLayer.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
 
                     b.ToTable("Products");
                 });
@@ -322,11 +356,17 @@ namespace DataLayer.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BusinessLayer.Product", b =>
+            modelBuilder.Entity("BusinessLayer.OrderedProduct", b =>
                 {
                     b.HasOne("BusinessLayer.Order", null)
-                        .WithMany("Products")
+                        .WithMany("OrderedProducts")
                         .HasForeignKey("OrderId");
+
+                    b.HasOne("BusinessLayer.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -382,7 +422,7 @@ namespace DataLayer.Migrations
 
             modelBuilder.Entity("BusinessLayer.Order", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("OrderedProducts");
                 });
 
             modelBuilder.Entity("BusinessLayer.User", b =>

@@ -2536,11 +2536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/evgeni/RiderProjects/GiftShop/WebAPI/TestLayer/TestLayer.csproj",
+      "projectUniqueName": "/home/evgeni/RiderProjects/copy/WebAPI/TestLayer/TestLayer.csproj",
       "projectName": "TestLayer",
-      "projectPath": "/home/evgeni/RiderProjects/GiftShop/WebAPI/TestLayer/TestLayer.csproj",
+      "projectPath": "/home/evgeni/RiderProjects/copy/WebAPI/TestLayer/TestLayer.csproj",
       "packagesPath": "/home/evgeni/.nuget/packages/",
-      "outputPath": "/home/evgeni/RiderProjects/GiftShop/WebAPI/TestLayer/obj/",
+      "outputPath": "/home/evgeni/RiderProjects/copy/WebAPI/TestLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/evgeni/.nuget/NuGet/NuGet.Config"
@@ -2556,11 +2556,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/BusinessLayer.csproj": {
-              "projectPath": "/home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/BusinessLayer.csproj"
+            "/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/BusinessLayer.csproj": {
+              "projectPath": "/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/BusinessLayer.csproj"
             },
-            "/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/DataLayer.csproj": {
-              "projectPath": "/home/evgeni/RiderProjects/GiftShop/WebAPI/DataLayer/DataLayer.csproj"
+            "/home/evgeni/RiderProjects/copy/WebAPI/DataLayer/DataLayer.csproj": {
+              "projectPath": "/home/evgeni/RiderProjects/copy/WebAPI/DataLayer/DataLayer.csproj"
             }
           }
         }

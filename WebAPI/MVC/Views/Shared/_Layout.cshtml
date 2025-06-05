@@ -14,7 +14,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - GiftShop</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
@@ -50,16 +50,13 @@
                     <li class="nav-item @(currentController == "Contacts" ? "active" : "")">
                         <a class="nav-link" asp-controller="Contacts" asp-action="Index">Contact Us</a>
                     </li>
-                    <partial name="_LoginPartial"/>
                 </ul>
+                
                 <div class="user_option">
-                    <a class="@(currentController == "Users" ? "active" : "")" asp-controller="Users" asp-action="Login">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <span>Login</span>
-                    </a>
-                    <a href="#">
+                    <a asp-controller="Orders" asp-action="Create">
                         <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     </a>
+                    <partial name="_LoginPartial"/>
                 </div>
             </div>
         </nav>

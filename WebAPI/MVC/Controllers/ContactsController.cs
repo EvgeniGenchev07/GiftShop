@@ -27,7 +27,7 @@ namespace MVC.Controllers
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(message))
             {
                 ViewBag.Error = "All fields are required.";
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index),ControllerContext.ActionDescriptor.ControllerName);
             }
 
             if (!email.Contains("@") || !email.Contains("."))

@@ -18,18 +18,13 @@ namespace DataLayer
         }
         public async Task Create(Order item)
         {
-            User userFromDb =await  dbContext.Users.FirstOrDefaultAsync(u => u.Id==item.User.Id);
-            if (userFromDb != null) item.User = userFromDb;
 
-            List<Product> products = new List<Product>(item.Products.Count);
-            for (int i = 0; i < item.Products.Count; ++i)
+            for (int i = 0; i < item.OrderedProducts.Count; ++i)
             {
-                Product productFromDb = await dbContext.Products.FirstOrDefaultAsync(p => p.Id == item.Products[i].Id);
-                if (productFromDb != null) products.Add(productFromDb);
-                else products.Add(item.Products[i]);
+                Product productFromDb = await dbContext.Products.FirstOrDefaultAsync(p => p.Id == item.OrderedProducts[i].Product.Id);
+                if (productFromDb != null) item.OrderedProducts[i].Product = productFromDb;
             }
-            item.Products = products; 
-
+            
             dbContext.Orders.Add(item);
             await dbContext.SaveChangesAsync();
 
@@ -41,7 +36,7 @@ namespace DataLayer
             IQueryable<Order> query = dbContext.Orders;
             if (useNavigationalProperties) query = query
             .Include(o => o.User)
-            .Include(o => o.Products);
+            .Include(o => o.OrderedProducts);
 
             if (isReadOnly) query = query.AsNoTrackingWithIdentityResolution();
 
@@ -56,7 +51,7 @@ namespace DataLayer
             IQueryable<Order> query = dbContext.Orders;
             if (useNavigationalProperties) query = query
             .Include(o => o.User)
-            .Include(o => o.Products);
+            .Include(o => o.OrderedProducts);
 
             if (isReadOnly) query = query.AsNoTrackingWithIdentityResolution();
 
@@ -72,15 +67,15 @@ namespace DataLayer
             if (useNavigationalProperties)
             {
              
-                List<Product> products = new List<Product>(item.Products.Count);
-                for (int i = 0; i < item.Products.Count; ++i)
+                List<OrderedProduct> OrderedProducts = new List<OrderedProduct>(item.OrderedProducts.Count);
+                for (int i = 0; i < item.OrderedProducts.Count; ++i)
                 {
                    
-                    Product productFromDb = await dbContext.Products.FirstOrDefaultAsync(p => p.Id == item.Products[i].Id);
-                    if (productFromDb != null) products.Add(productFromDb);
-                    else products.Add(item.Products[i]);
+                    OrderedProduct productFromDb = await dbContext.OrderedProducts.FirstOrDefaultAsync(p => p.Id == item.OrderedProducts[i].Id);
+                    if (productFromDb != null) OrderedProducts.Add(productFromDb);
+                    else OrderedProducts.Add(item.OrderedProducts[i]);
                 }
-                orderFromDb.Products = products;
+                orderFromDb.OrderedProducts = OrderedProducts;
             }
 
             dbContext.SaveChanges();

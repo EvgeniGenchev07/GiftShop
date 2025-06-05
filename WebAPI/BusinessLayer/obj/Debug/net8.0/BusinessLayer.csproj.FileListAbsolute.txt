@@ -34,3 +34,18 @@ C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/We
 /home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.pdb
 /home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/obj/Debug/net8.0/ref/BusinessLayer.dll
 /home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.csproj.AssemblyReference.cache
+C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.csproj.AssemblyReference.cache
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/bin/Debug/net8.0/BusinessLayer.deps.json
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/bin/Debug/net8.0/BusinessLayer.dll
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/bin/Debug/net8.0/BusinessLayer.pdb
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.csproj.AssemblyReference.cache
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.AssemblyInfoInputs.cache
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.AssemblyInfo.cs
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.csproj.CoreCompileInputs.cache
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.sourcelink.json
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.dll
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/refint/BusinessLayer.dll
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.pdb
+/home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/ref/BusinessLayer.dll
+/home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.sourcelink.json

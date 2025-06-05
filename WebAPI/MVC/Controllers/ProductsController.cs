@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BusinessLayer;
 using DataLayer;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MVC.Controllers
 {
@@ -18,7 +20,40 @@ namespace MVC.Controllers
         {
             _context = context;
         }
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<IActionResult> SaveImageFromUrlAsync(string imageUrl, string savePath)
+        {
+            Console.WriteLine("in------------------------------------------------------------------------------------------------");
+            using (HttpClient client = new HttpClient())
+            {
+                var imageBytes = await client.GetByteArrayAsync("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4723250.jpg&f=1&nofb=1&ipt=c1cb83e02191b405a83ebcaede079aadb125ed81f802ed98fd8c756a6d5fca9a");
+                await System.IO.File.WriteAllBytesAsync("~/Images/image.jpg",imageBytes);
+                return File(imageBytes, "image/jpeg");
+            }
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> GetAllById([FromBody] int[][] data)
+        {
+            try
+            {
+
+                List<Product> products = await _context.ReadAll(false, true);
+                List<OrderedProduct> result = new List<OrderedProduct>();
+                for (int i = 0; i < data[0].Length; ++i)
+                {
+                    Product product = products.FirstOrDefault(p => p.Id == data[0][i]);
+                    if (product is not null) result.Add(new OrderedProduct(data[1][i],product));
+                }
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+
+        }
         // GET: Products
         public async Task<IActionResult> Index()
         {

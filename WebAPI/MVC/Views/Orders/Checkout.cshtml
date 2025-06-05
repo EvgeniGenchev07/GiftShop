@@ -1,0 +1,318 @@
+﻿@using BusinessLayer
+@using Newtonsoft.Json
+@using NuGet.Protocol
+@model List<BusinessLayer.OrderedProduct>
+@{
+    ViewData["Title"] = "Check out";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .checkout-container {
+            margin: 0 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .checkout-form {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .order-summary {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        #hiddenForm {
+            display: none;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+            .row .form-group {
+                flex: 1;
+            }
+
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+            .btn:hover {
+                background: #2980b9;
+            }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .order-total {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .payment-methods {
+            margin: 20px 0;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            border: grey 1px solid;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    .chosed_option{
+        box-shadow:
+            0 10px 20px rgb(61, 48, 32),
+            0 4px 6px rgba(207, 153, 15, 0.89);
+}
+            .payment-option input {
+                width: auto;
+                margin-right: 10px;
+            }
+
+        .secure-checkout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+            .secure-checkout svg {
+                margin-right: 8px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1 style="margin-left:2.5rem">Checkout</h1>
+
+    <div class="checkout-container">
+
+        <section class="checkout-form">
+            <h2>Shipping Information</h2>
+
+            <form asp-action="Checkout" id="checkoutForm">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apartment">Apartment, suite, etc. (optional)</label>
+                    <input type="text" name="apartment" id="apartment">
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State/Province</label>
+                        <input id="state" type="text" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">ZIP/Postal Code</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input id="country" type="text" name="country" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <h2>Payment Method</h2>
+
+                <div class="payment-methods">
+                    <div class="payment-option">
+                        <input hidden="hidden" type="radio" id="cashOnDelivery" name="payment" value="cashOnDelivery" required>
+                        <label style="margin-top:10px" for="cashOnDelivery">Cash on Delivery</label>
+                    </div>
+                </div>
+                <input hidden="hidden" id="productsString" name="productsString" value='@Model.ToJson()'/>
+                <button type="submit" value="Checkout" class="btn">Complete Order</button>
+
+                <div class="secure-checkout">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#27ae60">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11V11.99z" />
+                    </svg>
+                    Secure Checkout
+                </div>
+            </form>
+        </section>
+
+        <section class="order-summary">
+            <h2>Your Order</h2>
+            <div id="order-items"></div>
+            @{
+                double total = 0;
+                foreach (var item in Model)
+                {
+                    double sum = item.Quantity * (double)item.Product.Price;
+                    total += sum;
+                    <div class="order-item">
+                        <span>@item.Product.Name x @item.Quantity</span>
+                        <span>$@sum.ToString("F2")</span>
+                    </div>
+                }
+
+                double subtotal = (double)total * 0.8;
+                double shipping = total >= 100 ? 0 : 10;
+                double tax = total - subtotal;
+                total += shipping;
+            }
+
+            <div class="order-item">
+                <span>Subtotal</span>
+                <span id="price-subtotal">$@subtotal.ToString("F2")</span>
+            </div>
+            <div class="order-item">
+                <span>Shipping</span>
+                <span id="price-shipping">
+                    @(shipping == 0 ? "Free" : $"${shipping:F2}")
+                </span>
+            </div>
+            <div class="order-item">
+                <span>Tax</span>
+                <span id="price-tax">$@tax.ToString("F2")</span>
+            </div>
+            <div class="order-total">
+                <span>Total</span>
+                <span id="price-total">$@total.ToString("F2")</span>
+            </div>
+
+            
+
+           
+
+            
+
+            <div style="margin-top: 30px;">
+                <h3>Return Policy</h3>
+                <p>We offer a 30-day return policy. If you're not satisfied with your purchase, you can return it for a full refund.</p>
+            </div>
+        </section>
+    </div>
+
+<script>
+    document.querySelectorAll('input[type="radio"]').forEach(el=>{
+        const option = el.parentElement;
+        option.addEventListener('click',(e)=>{
+            e.preventDefault()
+           buttonState(el,!el.checked);
+        })
+    })
+    function buttonState(el,checked){
+        const option = el.parentElement;
+        const option_container = option.parentElement;
+        console.log(checked)
+        if (checked){
+            Array.from(option_container.children).forEach(ch => {
+                ch.classList.remove("chosed_option")
+                ch.children[0].checked = false;
+            });
+            el.checked = true;
+            option.classList.add("chosed_option");
+        } else{
+            Array.from(option_container.children).forEach(ch => {
+                ch.classList.remove("chosed_option")
+                ch.children[0].checked = false;
+            });
+        }
+    }
+
+</script>
+</body>
+</html>
+
+@section Scripts {
+    @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+}
+}
+

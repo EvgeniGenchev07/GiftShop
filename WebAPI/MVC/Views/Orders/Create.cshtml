@@ -1,42 +1,234 @@
-﻿@model BusinessLayer.Order
-
+﻿@using BusinessLayer
+@using Newtonsoft.Json
+@model BusinessLayer.Order
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Basket";
 }
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/bascket.css">
+    
+       
+</head>
+<body>
+<div class="container">
+    <div class="cart-layout">
+        <section class="items-section">
+            <div class="cart-header">
+                <a asp-action="Index" asp-controller="Products" class="continue-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Continue Shopping
+                </a>
+                <h1 class="cart-title">Your Cart</h1>
+            </div>
 
-<h1>Create</h1>
+            <div class="cart-items" id="container">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+        </section>
 
-<h4>Order</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
+        <section class="summary-section">
+            <h2 class="summary-title">Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$0.00</span>
             </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Free</span>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
+
+            <div class="summary-row">
+                <span>Tax</span>
+                <span>$0.00</span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="summary-row summary-total">
+                <span>Total</span>
+                <span>$0.00</span>
             </div>
-        </form>
+
+            <form asp-action="Create" id="form">
+                <input hidden id="productsString" name="productsString"/>
+            </form>
+
+            <button type="submit" id="submitButton" value="Create" class="checkout-btn">Proceed to Checkout</button>
+
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div>
+        </section>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<script>
+    document.getElementById("submitButton").addEventListener("click",()=>{
+        const total = document.querySelector('.summary-total').lastElementChild.textContent.replace('$','');
+        if (total!="" && parseFloat(total)!== 0){
+            document.getElementById("form").submit();
+        }
+    });
+
+    const model = (object,name,quantity,price,totalQuantity)=>` 
+        <div class="cart-item">
+            <button class="remove-btn" aria-label="Remove item">
+                ×
+            </button>
+            <div class="product-info">
+                <img src="https://via.placeholder.com/80" alt="${name}" class="product-image">
+                <div>
+                    <div class="product-name">${name}</div>
+                </div>
+            </div>
+            <div class="price-col">
+                <div class="product-price">$${price.toFixed(2)}</div>
+            </div>
+            <div class="quantity-col">
+                <div class="quantity-control">
+                    <button class="qty-btn" aria-label="Decrease quantity">-</button>
+                    <input type="number" value="${quantity}" min="1" max="${totalQuantity}" class="qty-input">
+                    <button class="qty-btn" aria-label="Increase quantity">+</button>
+                </div>
+            </div>
+            <div class="total-col">
+                <div class="item-total">$${(price*quantity).toFixed(2)}</div>
+            </div>
+            <input hidden="hidden" class="op-object" value='${object}'/>
+        </div>`;
+
+    const basket = sessionStorage.getItem("basket");
+    if(basket){
+        const object = JSON.parse(basket);
+        fetch("../Products/GetAllById",{
+            method:"Post",
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify([object.map(r=>r.id),object.map(r =>r.quantity)])
+        }).then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+            .then(data => {
+                const stringObject = JSON.stringify(data);
+                document.getElementById("productsString").value = stringObject;
+                document.getElementById("submitButton").disabled = false;
+
+                for(let i = 0; i < data.length; ++i){
+                    document.getElementById("container").insertAdjacentHTML("beforeend",
+                        model(JSON.stringify(data[i]), data[i].product.name, data[i].quantity, data[i].product.price, data[i].product.quantity));
+                }
+
+                // Quantity controls
+                document.querySelectorAll('.qty-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const input = this.parentNode.querySelector('.qty-input');
+                        let value = parseInt(input.value);
+                        const max = parseInt(input.max);
+
+                        if (this.textContent === '-' && value > 1) {
+                            input.value = value - 1;
+                        } else if (this.textContent === '+' && value < max) {
+                            input.value = value + 1;
+                        }
+
+                        updateItemTotal(this.closest('.cart-item'));
+                        updateObject(this.closest('.cart-item'));
+                        updateOrderSummary();
+                    });
+                });
+
+                // Quantity input changes
+                document.querySelectorAll('.qty-input').forEach(input => {
+                    input.addEventListener('change', function() {
+                        const max = parseInt(this.max);
+                        if (this.value < 1) this.value = 1;
+                        if (this.value > max) this.value = max;
+
+                        updateItemTotal(this.closest('.cart-item'));
+                        updateObject(this.closest('.cart-item'));
+                        updateOrderSummary();
+                    });
+                });
+
+                // Remove items
+                document.querySelectorAll('.remove-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const card = this.closest('.cart-item');
+                        const json = JSON.parse(card.querySelector('.op-object').value);
+                        const id = json.product.id;
+                        let basket = JSON.parse(sessionStorage.getItem("basket"));
+                        basket = basket.filter(item => item.id != id);
+                        sessionStorage.setItem("basket", JSON.stringify(basket));
+                        card.remove();
+                        updateOrderSummary();
+
+                        // Disable checkout if no items left
+                        if(document.querySelectorAll('.cart-item').length === 0) {
+                            document.getElementById("submitButton").disabled = true;
+                        }
+                    });
+                });
+
+                function updateObject(item){
+                    const quantity = parseInt(item.querySelector('.qty-input').value);
+                    let object = JSON.parse(item.querySelector('.op-object').value);
+                    object.quantity = quantity;
+                    item.querySelector('.op-object').value = JSON.stringify(object);
+
+                    // Update session storage
+                    let basket = JSON.parse(sessionStorage.getItem("basket"));
+                    const itemId = object.product.id;
+                    const index = basket.findIndex(item => item.id === itemId);
+                    if(index !== -1) {
+                        basket[index].quantity = quantity;
+                        sessionStorage.setItem("basket", JSON.stringify(basket));
+                    }
+                }
+
+                function updateItemTotal(item) {
+                    const price = parseFloat(item.querySelector('.product-price').textContent.replace('$', ''));
+                    const quantity = parseInt(item.querySelector('.qty-input').value);
+                    const total = (price * quantity).toFixed(2);
+
+                    item.querySelector('.item-total').textContent = `$${total}`;
+                }
+
+                function updateOrderSummary() {
+                    let subtotal = 0;
+                    document.querySelectorAll('.item-total').forEach(total => {
+                        subtotal += parseFloat(total.textContent.replace('$', ''));
+                    });
+
+                    const tax = (subtotal * 0.2).toFixed(2);
+                    const orderTotal = (parseFloat(subtotal) + parseFloat(tax)).toFixed(2);
+
+                    document.querySelectorAll('.summary-row')[0].lastElementChild.textContent = `$${subtotal.toFixed(2)}`;
+                    document.querySelectorAll('.summary-row')[2].lastElementChild.textContent = `$${tax}`;
+                    document.querySelector('.summary-total').lastElementChild.textContent = `$${orderTotal}`;
+
+                    // Update productsString with current quantities
+                    const products = Array.from(document.querySelectorAll('.op-object')).map(el => JSON.parse(el.value));
+                    document.getElementById("productsString").value = JSON.stringify(products);
+                }
+
+                updateOrderSummary();
+            })
+            .catch(error => {
+                console.error("Fetch error:", error);
+            });
+    }
+</script>
+</body>
+</html>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

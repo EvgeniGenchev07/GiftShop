@@ -26,7 +26,7 @@ namespace TestLayer
                 List<Product> products = new List<Product>() {
             new Product("Mouse","Apple", 25,3)};
                 User user = new User("ivanivanov1@gmail.com","Ivan Ivanov");
-                Order order = new Order("Plovdiv, bul.Bulgaria 131", "0888888875", user, 75, products);
+                Order order = new Order("Plovdiv, bul.Bulgaria 131", "0888888875", user, products);
                 int ordersBefore = TestManager.dbContext.Orders.Count();
 
                 await orderContext.Create(order);
@@ -44,7 +44,7 @@ namespace TestLayer
                 List<Product> products = new List<Product>() {
             new Product("Mouse", "Apple", 25,3)};
                 User user = new User("ivanivanov1@gmail.com","Ivan Ivanov");
-                Order newOrder = new Order("Sofia, bul.Bulgaria 131", "0888888875", user, 75,products);
+                Order newOrder = new Order("Sofia, bul.Bulgaria 131", "0888888875", user,products);
                 await orderContext.Create(newOrder);
 
                 Order order = await orderContext.Read(newOrder.Id);
@@ -68,7 +68,7 @@ namespace TestLayer
             List<Product> products = new List<Product>() {
             new Product("Mouse", "Apple", 25,3)};
             User user = new User("ivanivanov1@gmail.com","Ivan Ivanov");
-            Order newOrder = new("Varna, bul.Bulgaria 131", "0888888875", user, 75, products);
+            Order newOrder = new("Varna, bul.Bulgaria 131", "0888888875", user, products);
                  await orderContext.Create(newOrder);
 
                 Order lastOrder = (await orderContext.ReadAll()).Last();
@@ -86,7 +86,7 @@ namespace TestLayer
             List<Product> products = new List<Product>() {
             new Product("Mouse", "Apple", 25,3)};
             User user = new User("ivanivanov1@gmail.com","Ivan Ivanov");
-            Order newOrder = new Order("Varna, bul.Bulgaria 131", "0888888875", user, 75, products);
+            Order newOrder = new Order("Varna, bul.Bulgaria 131", "0888888875", user, products);
                 await orderContext.Create(newOrder);
 
                 List<Order> orders =  await orderContext.ReadAll();
