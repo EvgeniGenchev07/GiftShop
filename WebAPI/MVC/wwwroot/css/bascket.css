@@ -244,3 +244,14 @@ body {
         gap: 1rem;
     }
 }
+.inactive{
+    display: none !important;
+    pointer-events: none !important;
+}
+#loader{
+        margin: auto 0;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        height: 40vh;
+}

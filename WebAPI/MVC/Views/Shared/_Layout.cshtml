@@ -53,13 +53,26 @@
                 </ul>
                 
                 <div class="user_option">
-                    <a asp-controller="Orders" asp-action="Create">
-                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <a asp-controller="Orders" asp-action="Create" class="basket-container" style="position: relative; display: inline-block; padding: 8px; margin: 0 10px; text-decoration: none;">
+                        <div class="basket-icon" style="position: relative;">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+
+                            <span class="item-count" style="position: absolute; bottom: -6px; right: -10px; background-color: #ff4757; color: white; border-radius: 50%; width: 15px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; transition: all 0.3s ease;" id="basket-span"></span>
+                        </div>
                     </a>
                     <partial name="_LoginPartial"/>
                 </div>
             </div>
         </nav>
+        <script>
+            const  basket_span = document.getElementById('basket-span');
+            const data = sessionStorage.getItem('basket');
+            const basket = JSON.parse(data||'[]');
+            if(basket.length > 0){
+                basket_span.innerHTML = basket.map(x=>x.quantity).reduce((a,b)=>a+b);
+            }
+            basket_span.style.display = basket.length > 0 ? 'flex' : 'none';
+        </script>
     </header>
 </div>
 

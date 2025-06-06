@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZxVOtrfUO/MJgTl4i83BKTIFvYe5EvvCAKjX4LgV5vA=",
+  "Hash": "IoOqAkkaIB5hWc1T1+c28I52B9y2sX/jYEvVm7pIiMM=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "903ch9sv1d",
-      "Integrity": "x3A/q6MQXWnSpF8nUjXcApjFbr/9NlRBm5oCrZg8qo4=",
+      "Fingerprint": "tyxfs2ec86",
+      "Integrity": "tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bascket.css"
@@ -1972,51 +1972,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/bascket.903ch9sv1d.css",
-      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4216"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x3A/q6MQXWnSpF8nUjXcApjFbr/9NlRBm5oCrZg8qo4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 10:10:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "903ch9sv1d"
-        },
-        {
-          "Name": "label",
-          "Value": "css/bascket.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-x3A/q6MQXWnSpF8nUjXcApjFbr/9NlRBm5oCrZg8qo4="
-        }
-      ]
-    },
-    {
       "Route": "css/bascket.css",
       "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
       "Selectors": [],
@@ -2027,7 +1982,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4216"
+          "Value": "4442"
         },
         {
           "Name": "Content-Type",
@@ -2035,11 +1990,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x3A/q6MQXWnSpF8nUjXcApjFbr/9NlRBm5oCrZg8qo4=\""
+          "Value": "\"tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 10:10:21 GMT"
+          "Value": "Fri, 06 Jun 2025 10:58:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2049,7 +2004,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x3A/q6MQXWnSpF8nUjXcApjFbr/9NlRBm5oCrZg8qo4="
+          "Value": "sha256-tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA="
+        }
+      ]
+    },
+    {
+      "Route": "css/bascket.tyxfs2ec86.css",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 10:58:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tyxfs2ec86"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bascket.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA="
         }
       ]
     },
@@ -2322,7 +2322,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 16:45:05 GMT"
+          "Value": "Fri, 06 Jun 2025 11:00:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2367,7 +2367,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 16:45:05 GMT"
+          "Value": "Fri, 06 Jun 2025 11:00:18 GMT"
         },
         {
           "Name": "Cache-Control",

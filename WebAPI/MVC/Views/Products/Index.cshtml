@@ -4,6 +4,43 @@
     ViewData["Title"] = "Shop";
 }
 
+<style>
+    .quantity-control {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .quantity-btn {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ddd;
+        background: #ffffff;
+        border-radius: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .quantity-input {
+        width: 40px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        border-radius: 4px;
+        padding: 0.25rem;
+    }
+    
+    .product-selected .quantity-control {
+        display: flex;
+    }
+</style>
+
 <!-- shop section -->
 <section class="shop_section layout_padding">
     <div class="container">
@@ -14,8 +51,8 @@
             @foreach (var item in Model)
             {
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="box">
-                        <a href="javascript:void(0)" class="products" data-id="@item.Id">
+                    <div class="box product-card" data-id="@item.Id">
+                        <a href="javascript:void(0)" class="products">
                             <div class="img-box">
                                 <img src="images/p@(counter + 1).png" alt="@item.Name">
                             </div>
@@ -28,6 +65,13 @@
                                 <div class="new"><span>New</span></div>
                             }
                         </a>
+                        
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" max="@item.Quantity">
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                        
                     </div>
                 </div>
                 counter++;
@@ -37,27 +81,94 @@
 
     <script>
         document.querySelectorAll(".products").forEach(el => {
-            el.addEventListener("click", () => {
+            el.addEventListener("click", (e) => {
+                e.preventDefault();
+                const productCard = el.closest('.product-card');
+                if(!productCard.classList.contains('product-selected')) {
+                    const basket_span = document.getElementById('basket-span');
+                    basket_span.style.display = 'flex';
+                    basket_span.innerHTML = parseInt(basket_span.innerHTML||0) + 1;
+                const productId = productCard.getAttribute('data-id');
+                productCard.classList.add('product-selected');
                 const basket = sessionStorage.getItem("basket");
-                const product_id = el.getAttribute("data-id");
                 if (basket) {
                     const object = JSON.parse(basket);
-                    console.log(object);
-                    const productIndex = object.findIndex(p=>p.id == product_id);
-                    console.log(productIndex);
-                    if(productIndex == -1){
-                        object.push({id:product_id,quantity:1})
-                    }else{
-                        console.log(object[productIndex])
-                        object[productIndex].quantity +=1;
-                    }
-                    console.log(object)
-                    sessionStorage.setItem("basket", JSON.stringify(object) );
-                } else {
-                    sessionStorage.setItem("basket", JSON.stringify([{id:product_id,quantity:1}]));
+                    object.push({id: productId, quantity: 1});
+                    sessionStorage.setItem("basket", JSON.stringify(object));
                 }
-                console.log(basket);
+                }
             });
+        });
+
+        document.addEventListener('click', function(e) {
+            const basket_span = document.getElementById('basket-span');
+            
+            if (e.target.classList.contains('minus-btn')) {
+                const input = e.target.nextElementSibling;
+                if (parseInt(input.value) > 1) {
+                    input.value = parseInt(input.value) - 1;
+                    updateBasketQuantity(e.target.closest('.product-card'));
+                }
+                else{
+                    const card = e.target.closest('.product-card');
+                    const productId = card.getAttribute('data-id');
+                    const data = sessionStorage.getItem("basket");
+                    const basket = JSON.parse(data);
+                    const filtered_basket = basket.filter(p => p.id != productId);
+                    if(filtered_basket.length == 0) {
+                        basket_span.style.display = 'none';
+                    }
+                    sessionStorage.setItem("basket", JSON.stringify(filtered_basket));
+                    card.classList.remove('product-selected');
+                }
+                basket_span.innerHTML = parseInt(basket_span.innerHTML) - 1;
+                
+            }
+            
+            if (e.target.classList.contains('plus-btn')) {
+                const input = e.target.previousElementSibling;
+                if (parseInt(input.value) <= input.max) {
+                    input.value = parseInt(input.value) + 1;
+                    basket_span.innerHTML = parseInt(basket_span.innerHTML) + 1;
+                    updateBasketQuantity(e.target.closest('.product-card'));
+                }
+            }
+            
+        });
+
+        function updateBasketQuantity(productCard) {
+            const productId = productCard.getAttribute('data-id');
+            const quantity = parseInt(productCard.querySelector('.quantity-input').value);
+            
+            const basket = sessionStorage.getItem("basket");
+            let object = basket ? JSON.parse(basket) : [];
+            
+            const productIndex = object.findIndex(p => p.id == productId);
+            
+            if (productIndex === -1) {
+                object.push({id: productId, quantity: quantity});
+            } else {
+                object[productIndex].quantity = quantity;
+            }
+            
+            sessionStorage.setItem("basket", JSON.stringify(object));
+        }
+        
+        // Initialize product cards based on basket
+        document.addEventListener('DOMContentLoaded', function() {
+            const basket = sessionStorage.getItem("basket");
+            if (basket) {
+                const object = JSON.parse(basket);
+                object.forEach(item => {
+                    console.log("in")
+                    const productCard = document.querySelector(`.product-card[data-id="${item.id}"]`);
+                    if (productCard) {
+                        productCard.classList.add('product-selected');
+                        const quantityInput = productCard.querySelector('.quantity-input');
+                        quantityInput.value = item.quantity;
+                    }
+                });
+            }
         });
     </script>
 </section>

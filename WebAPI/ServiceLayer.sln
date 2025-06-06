@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLayer", "TestLayer\Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{974FBB35-EA7F-4338-A20B-22A13A0865F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeder", "Seeder\Seeder.csproj", "{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{974FBB35-EA7F-4338-A20B-22A13A0865F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{974FBB35-EA7F-4338-A20B-22A13A0865F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{974FBB35-EA7F-4338-A20B-22A13A0865F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

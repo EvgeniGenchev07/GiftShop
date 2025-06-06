@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>903ch9sv1d</Fingerprint>
-      <Integrity>x3A/q6MQXWnSpF8nUjXcApjFbr/9NlRBm5oCrZg8qo4=</Integrity>
+      <Fingerprint>tyxfs2ec86</Fingerprint>
+      <Integrity>tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bascket.css'))</OriginalItemSpec>

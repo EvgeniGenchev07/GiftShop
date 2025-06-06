@@ -12,7 +12,12 @@
        
 </head>
 <body>
-<div class="container">
+<div class="d-flex justify-content-center" id="loader">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div class="container inactive" id="product-page">
     <div class="cart-layout">
         <section class="items-section">
             <div class="cart-header">
@@ -74,7 +79,7 @@
             document.getElementById("form").submit();
         }
     });
-
+    document.getElementById("submitButton").disabled = true;
     const model = (object,name,quantity,price,totalQuantity)=>` 
         <div class="cart-item">
             <button class="remove-btn" aria-label="Remove item">
@@ -102,9 +107,9 @@
             <input hidden="hidden" class="op-object" value='${object}'/>
         </div>`;
 
-    const basket = sessionStorage.getItem("basket");
-    if(basket){
-        const object = JSON.parse(basket);
+    const basketTemp = sessionStorage.getItem("basket");
+    if(basketTemp){
+        const object = JSON.parse(basketTemp);
         fetch("../Products/GetAllById",{
             method:"Post",
             headers:{
@@ -120,24 +125,35 @@
             .then(data => {
                 const stringObject = JSON.stringify(data);
                 document.getElementById("productsString").value = stringObject;
-                document.getElementById("submitButton").disabled = false;
+                if(data.length>0) document.getElementById("submitButton").disabled = false;
 
                 for(let i = 0; i < data.length; ++i){
                     document.getElementById("container").insertAdjacentHTML("beforeend",
                         model(JSON.stringify(data[i]), data[i].product.name, data[i].quantity, data[i].product.price, data[i].product.quantity));
                 }
-
+                document.getElementById("loader").classList.add("inactive");
+                console.log(document.getElementById("loader").classList.contains("inactive"));
+                document.getElementById("product-page").classList.remove("inactive");
                 // Quantity controls
                 document.querySelectorAll('.qty-btn').forEach(button => {
                     button.addEventListener('click', function() {
+                        const basket_span = document.getElementById("basket-span");
                         const input = this.parentNode.querySelector('.qty-input');
                         let value = parseInt(input.value);
                         const max = parseInt(input.max);
 
-                        if (this.textContent === '-' && value > 1) {
+                        if (this.textContent === '-') {
                             input.value = value - 1;
-                        } else if (this.textContent === '+' && value < max) {
+                            if(value > 1){
+                                input.value = value - 1;
+                            }
+                            else{
+                                removeItem(this);
+                            }
+                            basket_span.innerHTML = parseInt(basket_span.innerHTML) - 1;
+                        } else if (this.textContent === '+' && value <= max) {
                             input.value = value + 1;
+                            basket_span.innerHTML = parseInt(basket_span.innerHTML) + 1;
                         }
 
                         updateItemTotal(this.closest('.cart-item'));
@@ -162,22 +178,28 @@
                 // Remove items
                 document.querySelectorAll('.remove-btn').forEach(button => {
                     button.addEventListener('click', function() {
-                        const card = this.closest('.cart-item');
-                        const json = JSON.parse(card.querySelector('.op-object').value);
-                        const id = json.product.id;
-                        let basket = JSON.parse(sessionStorage.getItem("basket"));
-                        basket = basket.filter(item => item.id != id);
-                        sessionStorage.setItem("basket", JSON.stringify(basket));
-                        card.remove();
-                        updateOrderSummary();
-
-                        // Disable checkout if no items left
-                        if(document.querySelectorAll('.cart-item').length === 0) {
-                            document.getElementById("submitButton").disabled = true;
-                        }
+                        removeItem(this);
                     });
                 });
+                function removeItem(item){
+                    const basket_span = document.getElementById("basket-span");
+                    const card = item.closest('.cart-item');
+                    const json = JSON.parse(card.querySelector('.op-object').value);
+                    const id = json.product.id;
+                    const basket = JSON.parse(sessionStorage.getItem("basket"));
+                    const filtered_basket = basket.filter(item => item.id != id);
+                    if(filtered_basket.length == 0) {
+                        basket_span.style.display = 'none';
+                    }
+                    sessionStorage.setItem("basket", JSON.stringify(filtered_basket));
+                    card.remove();
+                    updateOrderSummary();
 
+                    // Disable checkout if no items left
+                    if(document.querySelectorAll('.cart-item').length === 0) {
+                        document.getElementById("submitButton").disabled = true;
+                    }
+                }
                 function updateObject(item){
                     const quantity = parseInt(item.querySelector('.qty-input').value);
                     let object = JSON.parse(item.querySelector('.op-object').value);
@@ -187,7 +209,7 @@
                     // Update session storage
                     let basket = JSON.parse(sessionStorage.getItem("basket"));
                     const itemId = object.product.id;
-                    const index = basket.findIndex(item => item.id === itemId);
+                    const index = basket.findIndex(item => item.id == itemId);
                     if(index !== -1) {
                         basket[index].quantity = quantity;
                         sessionStorage.setItem("basket", JSON.stringify(basket));
