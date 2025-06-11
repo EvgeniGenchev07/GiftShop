@@ -114,9 +114,9 @@ namespace DataLayer.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Brand")
+                    b.Property<string>("ImagePath")
                         .IsRequired()
-                        .HasMaxLength(50)
+                        .HasMaxLength(80)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")

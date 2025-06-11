@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/css/font-awesome.min.css"
     },
     {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/products.css",
+      "PackagePath": "staticwebassets/css/products.css"
+    },
+    {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/responsive.css",
       "PackagePath": "staticwebassets/css/responsive.css"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/fonts/octin_sports_rg.ttf",
       "PackagePath": "staticwebassets/fonts/octin_sports_rg.ttf"
+    },
+    {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Console.png",
+      "PackagePath": "staticwebassets/images/Console.png"
     },
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/agency-img.jpg",
@@ -135,6 +143,10 @@
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/jquery-3.4.1.min.js",
       "PackagePath": "staticwebassets/js/jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/products.js",
+      "PackagePath": "staticwebassets/js/products.js"
     },
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/site.js",

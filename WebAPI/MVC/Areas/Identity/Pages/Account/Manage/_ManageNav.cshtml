@@ -3,13 +3,16 @@
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }
 <ul class="nav nav-pills flex-column">
-    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
-    @if (hasExternalLogins)
-    {
-        <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
-    }
-    <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
+    <aside class="account-sidebar">
+        <h3>My Account</h3>
+        <ul class="account-menu">
+
+            <li><a asp-page="./Index" id="profile" as="./Index" class="active"><i class="fas fa-tachometer-alt @ManageNavPages.IndexNavClass(ViewContext)"></i> Dashboard</a></li>
+                    <li><a><i class="fas fa-box-open"></i> Orders</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+            <li><a id="change-password" asp-page="./ChangePassword"><i class="fas fa-user @ManageNavPages.ChangePasswordNavClass(ViewContext)"></i> Account Details</a></li>
+            <li><a id="personal-data" asp-page="./PersonalData"><i class="fas fa-heart @ManageNavPages.PersonalDataNavClass(ViewContext)"></i> Wishlist</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </aside>
 </ul>

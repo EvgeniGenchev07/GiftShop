@@ -80,13 +80,13 @@
         }
     });
     document.getElementById("submitButton").disabled = true;
-    const model = (object,name,quantity,price,totalQuantity)=>` 
+    const model = (object,name,imagePath,quantity,price,totalQuantity)=>` 
         <div class="cart-item">
             <button class="remove-btn" aria-label="Remove item">
                 ×
             </button>
             <div class="product-info">
-                <img src="https://via.placeholder.com/80" alt="${name}" class="product-image">
+                <img src="${imagePath}" alt="" class="product-image">
                 <div>
                     <div class="product-name">${name}</div>
                 </div>
@@ -110,6 +110,7 @@
     const basketTemp = sessionStorage.getItem("basket");
     if(basketTemp){
         const object = JSON.parse(basketTemp);
+        console.log(JSON.stringify([object.map(r=>r.id),object.map(r =>r.quantity)]));
         fetch("../Products/GetAllById",{
             method:"Post",
             headers:{
@@ -117,6 +118,7 @@
             },
             body:JSON.stringify([object.map(r=>r.id),object.map(r =>r.quantity)])
         }).then(response => {
+            console.log(response);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -129,7 +131,7 @@
 
                 for(let i = 0; i < data.length; ++i){
                     document.getElementById("container").insertAdjacentHTML("beforeend",
-                        model(JSON.stringify(data[i]), data[i].product.name, data[i].quantity, data[i].product.price, data[i].product.quantity));
+                        model(JSON.stringify(data[i]), data[i].product.name,data[i].product.imagePath, data[i].quantity, data[i].product.price, data[i].product.quantity));
                 }
                 document.getElementById("loader").classList.add("inactive");
                 console.log(document.getElementById("loader").classList.contains("inactive"));
@@ -225,17 +227,19 @@
                 }
 
                 function updateOrderSummary() {
-                    let subtotal = 0;
+                    let orderTotal = 0;
                     document.querySelectorAll('.item-total').forEach(total => {
-                        subtotal += parseFloat(total.textContent.replace('$', ''));
+                        orderTotal += parseFloat(total.textContent.replace('$', ''));
                     });
+                     console.log(orderTotal)
+                        const tax = (orderTotal * 0.2).toFixed(2);
+                        let subtotal = orderTotal*0.8;
 
-                    const tax = (subtotal * 0.2).toFixed(2);
-                    const orderTotal = (parseFloat(subtotal) + parseFloat(tax)).toFixed(2);
-
-                    document.querySelectorAll('.summary-row')[0].lastElementChild.textContent = `$${subtotal.toFixed(2)}`;
+                        document.querySelectorAll('.summary-row')[0].lastElementChild.textContent = `$${subtotal.toFixed(2)}`;
+                            document.querySelectorAll('.summary-row')[1].lastElementChild.textContent = `${orderTotal<=100?"$10.00":"Free"}`;
+                               orderTotal+= orderTotal<=100?10:0;
                     document.querySelectorAll('.summary-row')[2].lastElementChild.textContent = `$${tax}`;
-                    document.querySelector('.summary-total').lastElementChild.textContent = `$${orderTotal}`;
+                        document.querySelector('.summary-total').lastElementChild.textContent = `$${orderTotal.toFixed(2)}`;
 
                     // Update productsString with current quantities
                     const products = Array.from(document.querySelectorAll('.op-object')).map(el => JSON.parse(el.value));

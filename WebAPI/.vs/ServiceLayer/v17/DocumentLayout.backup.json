@@ -1,129 +1,235 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\orders\\confirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\orders\\confirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\ordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\ordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\datalayer\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\businesslayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\datalayer\\ordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\ordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\giftshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\giftshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\businesslayer\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\businesslayer\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\orderedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\orderedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\businesslayer\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\datalayer\\giftshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\giftshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\testlayer\\ordercontexttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|solutionrelative:testlayer\\ordercontexttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\feedbacks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\feedbacks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\testlayer\\feedbackcontexttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|solutionrelative:testlayer\\feedbackcontexttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\testlayer\\testmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|solutionrelative:testlayer\\testmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\testlayer\\productcontexttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|solutionrelative:testlayer\\productcontexttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\testlayer\\testlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EC12C17E-A21A-413A-B118-60FFC6AD02C1}|TestLayer\\TestLayer.csproj|solutionrelative:testlayer\\testlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\wwwroot\\images\\console.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\wwwroot\\images\\console.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\feedbacks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\feedbacks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602051818_update_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataLayer\\Migrations\\20250602051818_update_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\businesslayer\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\wwwroot\\css\\products.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\wwwroot\\css\\products.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\wwwroot\\js\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\wwwroot\\js\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\controllers\\whyuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\whyuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\areas\\identity\\pages\\account\\confirmemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\confirmemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527092548_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataLayer\\Migrations\\20250527092548_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\models\\ordersuccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\ordersuccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\datalayer\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527082249_Update_V3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataLayer\\Migrations\\20250527082249_Update_V3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\views\\whyus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\whyus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\iautentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}|Seeder\\Seeder.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\seeder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A120B209-C7AB-46DF-A020-F1BEA8DBD73D}|Seeder\\Seeder.csproj|solutionrelative:seeder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\mvc\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602051818_update_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527092548_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527082249_Update_V3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\datalayer\\iautentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\iautentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\businesslayer\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\hpnew\\downloads\\giftshop-main\\giftshop-main\\webapi\\businesslayer\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0239C9A6-B7D7-D33F-C2D5-F469C95A9F18}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MVC\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MVC\\Views\\Users\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{974FBB35-EA7F-4338-A20B-22A13A0865F8}|MVC\\MVC.csproj|solutionrelative:mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MVC\\Views\\Users\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\AutenticationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\AutenticationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataLayer\\AutenticationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MVC\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602074658_update_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|c:\\users\\hpnew\\desktop\\school\\programming\\codes\\software development\\giftshop\\webapi\\datalayer\\migrations\\20250602074658_update_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35451815-DFF1-4DA2-9CF4-DE4672B835A3}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\migrations\\20250602074658_update_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -133,7 +239,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -141,165 +247,499 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "OrderContextTest.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\OrderContextTest.cs",
+              "RelativeDocumentMoniker": "TestLayer\\OrderContextTest.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\OrderContextTest.cs",
+              "RelativeToolTip": "TestLayer\\OrderContextTest.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwBsAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:35:24.436Z",
+              "WhenOpened": "2025-06-10T12:48:57.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Role.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Role.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Role.cs",
-              "RelativeToolTip": "BusinessLayer\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T04:42:07.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Orders\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Orders\\Checkout.cshtml",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Orders\\Checkout.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Orders\\Checkout.cshtml",
-              "ViewState": "AgIAAAUBAAAAAAAAAAAAAA4BAABGAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Products\\Details.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvxUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T05:28:21.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderContext.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\OrderContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\OrderContext.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\OrderContext.cs",
-              "RelativeToolTip": "DataLayer\\OrderContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:27:02.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Product.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Product.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Product.cs",
-              "RelativeToolTip": "BusinessLayer\\Product.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:20:56.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Orders\\Create.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Orders\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Orders\\Create.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Orders\\Create.cshtml",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAkwHQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T07:49:00.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T06:43:29.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAewF8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T07:48:13.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Order.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Order.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Order.cs",
-              "RelativeToolTip": "BusinessLayer\\Order.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAnwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:20:56.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\User.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\User.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\User.cs",
-              "RelativeToolTip": "BusinessLayer\\User.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAnwBsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:20:56.282Z",
+              "WhenOpened": "2025-06-10T12:17:59.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "GiftShopDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\GiftShopDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\GiftShopDbContext.cs",
               "RelativeDocumentMoniker": "DataLayer\\GiftShopDbContext.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\GiftShopDbContext.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\GiftShopDbContext.cs",
               "RelativeToolTip": "DataLayer\\GiftShopDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T09:27:23.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Order.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Order.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Order.cs",
+              "RelativeToolTip": "BusinessLayer\\Order.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA9wDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:20:56.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "OrderedProduct.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\OrderedProduct.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\OrderedProduct.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\OrderedProduct.cs",
+              "RelativeToolTip": "BusinessLayer\\OrderedProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:54:19.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderContext.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\OrderContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\OrderContext.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\OrderContext.cs",
+              "RelativeToolTip": "DataLayer\\OrderContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:27:02.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IdentityContext.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\IdentityContext.cs",
               "RelativeDocumentMoniker": "DataLayer\\IdentityContext.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\IdentityContext.cs",
               "RelativeToolTip": "DataLayer\\IdentityContext.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAjwFkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwFoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T04:50:47.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Confirmed.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Orders\\Confirmed.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Orders\\Confirmed.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Orders\\Confirmed.cshtml*",
+              "RelativeToolTip": "MVC\\Views\\Orders\\Confirmed.cshtml*",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T11:23:33.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Startup.cs",
+              "RelativeDocumentMoniker": "MVC\\Startup.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Startup.cs",
+              "RelativeToolTip": "MVC\\Startup.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAArwB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:20:24.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAiwGUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T07:48:13.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\User.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\User.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\User.cs",
+              "RelativeToolTip": "BusinessLayer\\User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAArwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:20:56.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Orders\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Orders\\Create.cshtml",
+              "ViewState": "AgIAANUAAAAAAAAAAAAowOUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T07:49:00.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Orders\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Orders\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Orders\\Checkout.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Orders\\Checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T05:28:21.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeToolTip": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAowDwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:06:53.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAAIUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T13:29:51.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeToolTip": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T13:22:14.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "MVC\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T13:22:27.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgvxQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T12:18:08.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvxYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T12:17:43.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Feedbacks\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Feedbacks\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Feedbacks\\Create.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Feedbacks\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T12:44:20.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T12:37:16.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TestLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\TestLayer.csproj",
+              "RelativeDocumentMoniker": "TestLayer\\TestLayer.csproj",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\TestLayer.csproj",
+              "RelativeToolTip": "TestLayer\\TestLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-10T12:48:50.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FeedbackContextTest.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\FeedbackContextTest.cs",
+              "RelativeDocumentMoniker": "TestLayer\\FeedbackContextTest.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\FeedbackContextTest.cs",
+              "RelativeToolTip": "TestLayer\\FeedbackContextTest.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:48:56.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductContextTest.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\ProductContextTest.cs",
+              "RelativeDocumentMoniker": "TestLayer\\ProductContextTest.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\ProductContextTest.cs",
+              "RelativeToolTip": "TestLayer\\ProductContextTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:48:58.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TestManager.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\TestManager.cs",
+              "RelativeDocumentMoniker": "TestLayer\\TestManager.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\TestLayer\\TestManager.cs",
+              "RelativeToolTip": "TestLayer\\TestManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:48:59.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Feedbacks\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Feedbacks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Feedbacks\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Feedbacks\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T12:33:15.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Console.png",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\wwwroot\\images\\Console.png",
+              "RelativeDocumentMoniker": "MVC\\wwwroot\\images\\Console.png",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\wwwroot\\images\\Console.png",
+              "RelativeToolTip": "MVC\\wwwroot\\images\\Console.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-06-10T12:28:57.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAADgvxMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T11:53:50.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T06:04:49.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwHQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T08:35:24.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Product.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Product.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Product.cs",
+              "RelativeToolTip": "BusinessLayer\\Product.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:20:56.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T10:50:29.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Models\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Models\\HomeViewModel.cs",
+              "RelativeToolTip": "MVC\\Models\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T12:12:12.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "products.js",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\wwwroot\\js\\products.js",
+              "RelativeDocumentMoniker": "MVC\\wwwroot\\js\\products.js",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\wwwroot\\js\\products.js",
+              "RelativeToolTip": "MVC\\wwwroot\\js\\products.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-09T12:24:23.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "products.css",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\wwwroot\\css\\products.css",
+              "RelativeDocumentMoniker": "MVC\\wwwroot\\css\\products.css",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\wwwroot\\css\\products.css",
+              "RelativeToolTip": "MVC\\wwwroot\\css\\products.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-09T12:26:18.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ContactsController.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\ContactsController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\ContactsController.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\ContactsController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\ContactsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T11:19:23.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ConfirmEmail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "RelativeDocumentMoniker": "MVC\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "RelativeToolTip": "MVC\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:20:51.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "WhyUsController.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\WhyUsController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\WhyUsController.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\WhyUsController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\WhyUsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:55:21.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:43:29.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Status.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Status.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Status.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Status.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Status.cs",
               "RelativeToolTip": "BusinessLayer\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -307,173 +747,196 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DataLayer.csproj",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\DataLayer.csproj",
-              "RelativeDocumentMoniker": "DataLayer\\DataLayer.csproj",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\DataLayer.csproj",
-              "RelativeToolTip": "DataLayer\\DataLayer.csproj",
+              "DocumentIndex": 40,
+              "Title": "OrderSuccess.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Models\\OrderSuccess.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\OrderSuccess.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Models\\OrderSuccess.cs",
+              "RelativeToolTip": "MVC\\Models\\OrderSuccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:56:37.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProductContext.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\ProductContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\ProductContext.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\ProductContext.cs",
+              "RelativeToolTip": "DataLayer\\ProductContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:23:38.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\WhyUs\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\WhyUs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Views\\WhyUs\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\WhyUs\\Index.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T10:55:39.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Role.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Role.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Role.cs",
+              "RelativeToolTip": "BusinessLayer\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:42:07.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\Seeder\\Program.cs",
+              "RelativeDocumentMoniker": "Seeder\\Program.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\Seeder\\Program.cs",
+              "RelativeToolTip": "Seeder\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:34:36.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DataLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\DataLayer.csproj",
+              "RelativeDocumentMoniker": "DataLayer\\DataLayer.csproj",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\DataLayer.csproj",
+              "RelativeToolTip": "DataLayer\\DataLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-06-02T07:45:32.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 45,
               "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "MVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\MVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "MVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAywFMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAADwv1MAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T06:52:16.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 58,
               "Title": "20250602074658_update_v5.cs",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602074658_update_v5.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250602074658_update_v5.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602074658_update_v5.cs",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602074658_update_v5.cs",
-              "RelativeToolTip": "DataLayer\\Migrations\\20250602074658_update_v5.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602074658_update_v5.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T07:46:58.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T06:04:49.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 47,
               "Title": "20250602051818_update_v4.cs",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602051818_update_v4.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250602051818_update_v4.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602051818_update_v4.cs",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602051818_update_v4.cs",
-              "RelativeToolTip": "DataLayer\\Migrations\\20250602051818_update_v4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250602051818_update_v4.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T05:18:18.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductContext.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\ProductContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\ProductContext.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\ProductContext.cs",
-              "RelativeToolTip": "DataLayer\\ProductContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAnwCgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:23:38.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 48,
               "Title": "20250527092548_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527092548_InitialCreate.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250527092548_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527092548_InitialCreate.cs",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527092548_InitialCreate.cs",
-              "RelativeToolTip": "DataLayer\\Migrations\\20250527092548_InitialCreate.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527092548_InitialCreate.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T09:25:48.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 53,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Controllers\\UsersController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T09:14:34.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserContext.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\UserContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\UserContext.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\UserContext.cs",
-              "RelativeToolTip": "DataLayer\\UserContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:20:56.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 54,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Create.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Create.cshtml",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Create.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Create.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-27T05:45:27.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 59,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "MVC\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Properties\\launchSettings.json",
-              "RelativeToolTip": "MVC\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-20T08:29:57.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 55,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Index.cshtml",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\Views\\Users\\Index.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-27T05:45:19.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 56,
               "Title": "AutenticationContext.cs",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\AutenticationContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\AutenticationContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\AutenticationContext.cs",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\AutenticationContext.cs",
-              "RelativeToolTip": "DataLayer\\AutenticationContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\AutenticationContext.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T05:52:47.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 49,
               "Title": "20250527082249_Update_V3.cs",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527082249_Update_V3.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250527082249_Update_V3.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527082249_Update_V3.cs",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527082249_Update_V3.cs",
-              "RelativeToolTip": "DataLayer\\Migrations\\20250527082249_Update_V3.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\Migrations\\20250527082249_Update_V3.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T08:22:49.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 50,
               "Title": "IAutentication.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\IAutentication.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\IAutentication.cs",
               "RelativeDocumentMoniker": "DataLayer\\IAutentication.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\DataLayer\\IAutentication.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\DataLayer\\IAutentication.cs",
               "RelativeToolTip": "DataLayer\\IAutentication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -481,11 +944,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 51,
               "Title": "Feedback.cs",
-              "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Feedback.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Feedback.cs",
-              "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\BusinessLayer\\Feedback.cs",
+              "ToolTip": "C:\\Users\\hpnew\\Downloads\\GiftShop-main\\GiftShop-main\\WebAPI\\BusinessLayer\\Feedback.cs",
               "RelativeToolTip": "BusinessLayer\\Feedback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -493,23 +956,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 57,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\appsettings.json",
-              "RelativeDocumentMoniker": "MVC\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\appsettings.json",
               "ToolTip": "C:\\Users\\hpnew\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\appsettings.json",
-              "RelativeToolTip": "MVC\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\School\\Programming\\Codes\\Software Development\\GiftShop\\WebAPI\\MVC\\appsettings.json",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-20T08:29:50.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 52,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAACAWAAAAAAAAAADwvzIWAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-05-20T06:31:12.019Z"

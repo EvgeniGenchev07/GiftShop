@@ -440,3 +440,12 @@ C:\Users\hpnew\Desktop\School\Programming\Codes\Software Development\GiftShop\We
 C:\Users\hpnew\Desktop\School\Programming\Codes\Software Development\GiftShop\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.pdb
 C:\Users\hpnew\Desktop\School\Programming\Codes\Software Development\GiftShop\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.genruntimeconfig.cache
 C:\Users\hpnew\Desktop\School\Programming\Codes\Software Development\GiftShop\WebAPI\TestLayer\obj\Debug\net8.0\ref\TestLayer.dll
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\bin\Debug\net8.0\CoverletSourceRootsMapping_TestLayer
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.csproj.AssemblyReference.cache
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.AssemblyInfoInputs.cache
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.AssemblyInfo.cs
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.csproj.CoreCompileInputs.cache
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.dll
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\refint\TestLayer.dll
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\TestLayer\obj\Debug\net8.0\TestLayer.pdb

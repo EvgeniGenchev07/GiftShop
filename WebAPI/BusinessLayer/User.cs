@@ -21,6 +21,7 @@ namespace BusinessLayer
         public string Address { get; set; }
 
         public List<Order> Orders { get; set; }
+       // public List<Feedback> Feedbacks { get; set; }
 
         public User()
         {

@@ -1,6 +1,6 @@
-@page
 @model OrderSuccess
 @{
+    ViewData["Title"] = "Order Confirmed";
 }
 
 <style>
@@ -104,7 +104,7 @@
         <div class="order-details">
             <div class="detail-row">
                 <span class="detail-label">Order Number:</span>
-                <span>@Model.OrderId</span>
+                <span>#@Model.OrderId</span>
             </div>
             <div class="detail-row">
                 <span class="detail-label">Date:</span>
@@ -112,7 +112,7 @@
             </div>
             <div class="detail-row">
                 <span class="detail-label">Total:</span>
-                <span>@Model.TotalAmount.ToString("C")</span>
+                <span>$@($"{double.Parse(Model.TotalAmount):f2}")</span>
             </div>
             <div class="detail-row">
                 <span class="detail-label">Payment Method:</span>
@@ -123,10 +123,10 @@
         <p>We've sent a confirmation email to <strong>@Model.Email</strong> with your order details.</p>
 
         <div class="action-buttons">
-            <a href="/" class="btn btn-outline">
+            <a asp-action="Index" asp-controller="Products" class="btn btn-outline">
                 <i class="fas fa-shopping-bag"></i> Continue Shopping
             </a>
-            <a href="/Account/Orders" class="btn">
+            <a asp-area="Identity" asp-asp-page="Account/Manage/Index" class="btn">
                 <i class="fas fa-clipboard-list"></i> View Orders
             </a>
         </div>

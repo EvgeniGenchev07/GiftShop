@@ -26,7 +26,7 @@ namespace TestLayer
                 List<Product> products = new List<Product>() {
             new Product("Mouse","Apple", 25,3)};
                 User user = new User("ivanivanov1@gmail.com","Ivan Ivanov");
-                Order order = new Order("Plovdiv, bul.Bulgaria 131", "0888888875", user, products);
+                Order order = new Order("Ivan Ivanow","example@gmail.com","Plovdiv, bul.Bulgaria 131", "0888888875", user, products.Select(p=>new OrderedProduct() { Product = p,Quantity=10}).ToList(),PaymentMethod.CashOnDelivery,10);
                 int ordersBefore = TestManager.dbContext.Orders.Count();
 
                 await orderContext.Create(order);

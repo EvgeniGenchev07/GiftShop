@@ -49,3 +49,15 @@ C:/Users/hpnew/Desktop/School/Programming/Codes/Software Development/GiftShop/We
 /home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.pdb
 /home/evgeni/RiderProjects/copy/WebAPI/BusinessLayer/obj/Debug/net8.0/ref/BusinessLayer.dll
 /home/evgeni/RiderProjects/GiftShop/WebAPI/BusinessLayer/obj/Debug/net8.0/BusinessLayer.sourcelink.json
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+C:\Users\hpnew\Downloads\GiftShop-main\GiftShop-main\WebAPI\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll

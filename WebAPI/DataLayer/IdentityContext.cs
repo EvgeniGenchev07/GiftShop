@@ -20,7 +20,6 @@ namespace DataLayer
             this._userManager = userManager;
         }
 
-        #region CRUD
 
         public async Task CreateUserAsync(string name, string password, string email, Role role)
         {
@@ -88,7 +87,12 @@ namespace DataLayer
         {
             try
             {
-                return await _userManager.FindByIdAsync(key);
+                var query = _context.Users
+                    .Include(o => o.Orders)
+                    .ThenInclude(o=>o.OrderedProducts)
+                    .ThenInclude(op=>op.Product);
+                var user = await query.FirstOrDefaultAsync(u=>u.Id==key);
+                return user;
             }
             catch (Exception)
             {
@@ -157,7 +161,6 @@ namespace DataLayer
             }
         }
 
-        #endregion
 
     }
 }

@@ -4,7 +4,7 @@ public class OrderSuccess
 {
     public int OrderId { get; set; }
     
-    public decimal TotalAmount { get; set; }
+    public string TotalAmount { get; set; }
     
     public string PaymentMethod { get; set; }
     

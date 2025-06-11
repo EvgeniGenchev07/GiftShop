@@ -98,14 +98,15 @@ namespace MVC.Controllers
                 User user = await _authentication.ReadUserAsync(User.Identity.GetUserId<string>());
                 List<OrderedProduct> products = JsonConvert.DeserializeObject<List<OrderedProduct>>(keyValuePairs["productsString"]);
                 PaymentMethod paymentMethod = keyValuePairs["payment"] == "cashOnDelivery" ? PaymentMethod.CashOnDelivery : PaymentMethod.CreditCard;
-                Order order = new Order(name,keyValuePairs["email"], address,keyValuePairs["phoneNumber"], user,products,paymentMethod,products.Sum(p => p.Product.Price * p.Quantity));
+                Order order = new Order(name,keyValuePairs["email"], address,keyValuePairs["phoneNumber"], user,products,paymentMethod,(products.Sum(p => p.Product.Price * p.Quantity)<=100?10:0));
                 await _context.Create(order);
                 Order newOrder = await _authentication.GetUserLastOrder(user.Id);
                 TempData["OrderId"] = newOrder.Id;
                 TempData["Email"] = newOrder.ReceiverEmail;
                 TempData["PaymentMethod"] = newOrder.PaymentMethod.ToString();
-                TempData["TotalAmount"] = newOrder.OrderedProducts.Sum(p => p.Product.Price * p.Quantity);
-                return View("Confirmed");
+                var total = (double)newOrder.OrderedProducts.Sum(p => p.Product.Price * p.Quantity);
+                TempData["TotalAmount"] = (total+(total<=100?10:0)).ToString();
+                return RedirectToAction(nameof(Confirmed));
             }
             catch (Exception e)
             {
@@ -122,7 +123,7 @@ namespace MVC.Controllers
                 OrderId = Convert.ToInt32(TempData["OrderId"]),
                 Email = TempData["Email"]?.ToString(),
                 PaymentMethod = TempData["PaymentMethod"]?.ToString(),
-                TotalAmount = decimal.Parse(TempData["TotalAmount"].ToString())
+                TotalAmount = TempData["TotalAmount"].ToString()
             };
 
             return View(model);

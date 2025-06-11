@@ -17,7 +17,7 @@ try
     options.Password.RequiredLength = 5;
 
     DbContextOptionsBuilder<GiftShopDbContext> builder = new DbContextOptionsBuilder<GiftShopDbContext>();
-    builder.UseSqlite("DataSource=../../../../DataLayer/codehub.db3");
+    builder.UseSqlite("DataSource=../../../../DataLayer/gift_shop.db3");
 
     GiftShopDbContext dbContext = new GiftShopDbContext(builder.Options);
     UserManager<User> userManager = new UserManager<User>(

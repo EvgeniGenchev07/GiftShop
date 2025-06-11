@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -20,25 +21,16 @@ namespace MVC.Controllers
         {
             _context = context;
         }
-        [AllowAnonymous]
-        [HttpGet]
-        public async Task<IActionResult> SaveImageFromUrlAsync(string imageUrl, string savePath)
-        {
-            Console.WriteLine("in------------------------------------------------------------------------------------------------");
-            using (HttpClient client = new HttpClient())
-            {
-                var imageBytes = await client.GetByteArrayAsync("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4723250.jpg&f=1&nofb=1&ipt=c1cb83e02191b405a83ebcaede079aadb125ed81f802ed98fd8c756a6d5fca9a");
-                await System.IO.File.WriteAllBytesAsync("~/Images/image.jpg",imageBytes);
-                return File(imageBytes, "image/jpeg");
-            }
-        }
 
         [HttpPost]
-        public async Task<IActionResult> GetAllById([FromBody] int[][] data)
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllById([FromBody][AllowNull] int[][] data)
         {
             try
             {
-
+                if (data != null && data.Length > 0 && data[0].Length > 0)
+                {
+                    
                 List<Product> products = await _context.ReadAll(false, true);
                 List<OrderedProduct> result = new List<OrderedProduct>();
                 for (int i = 0; i < data[0].Length; ++i)
@@ -47,6 +39,8 @@ namespace MVC.Controllers
                     if (product is not null) result.Add(new OrderedProduct(data[1][i],product));
                 }
                 return Ok(result);
+                }
+                return Ok(new List<OrderedProduct>());
             }
             catch (Exception ex)
             {
@@ -63,6 +57,7 @@ namespace MVC.Controllers
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            
             if (id == null)
             {
                 return NotFound();
@@ -88,13 +83,33 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Brand,Price,Quantity")] Product product)
+        public async Task<IActionResult> Create(
+    [Bind("Id,Name,Brand,Price,Quantity")] Product product,
+    IFormFile photo)  // Parameter name matches the input name
         {
             if (ModelState.IsValid)
             {
+                // Handle image upload
+                if (photo != null && photo.Length > 0)
+                {
+                    // Create unique filename
+                    var fileName = $"{product.Name}{Path.GetExtension(photo.FileName)}";
+                    var filePath = Path.Combine("wwwroot/images", fileName);
+
+                    // Save file
+                    using (var stream = System.IO.File.Create(filePath))
+                    {
+                        await photo.CopyToAsync(stream);
+                    }
+
+                    // Store path in database
+                    product.ImagePath = $"/images/{fileName}";
+                }
+
                 await _context.Create(product);
                 return RedirectToAction(nameof(Index));
             }
+
             return View(product);
         }
 
