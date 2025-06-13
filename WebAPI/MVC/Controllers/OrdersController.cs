@@ -49,7 +49,19 @@ namespace MVC.Controllers
 
             return View(order);
         }
-
+        [HttpPost]
+        public async Task<IActionResult> ProcessOrder([FromBody] Dictionary<string,object> data)
+        {
+            if (data is null || !data.ContainsKey("id")||!data.ContainsKey("status")) return BadRequest();
+            var order = await _context.Read(int.Parse(data["id"].ToString()), false,true);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            order.Status = Enum.Parse<Status>(data["status"].ToString());
+            await _context.Update(order);
+            return Ok();
+        }
         // GET: Orders/Create
         public IActionResult Create()
         {

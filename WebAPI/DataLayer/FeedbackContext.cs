@@ -26,6 +26,7 @@ namespace DataLayer
         {
             IQueryable<Feedback> query = dbContext.Feedbacks;
             if (isReadOnly) query = query.AsNoTrackingWithIdentityResolution();
+            if(useNavigationalProperties) query = query.Include(x => x.User);
             Feedback feedback = await query.FirstOrDefaultAsync(x => x.Id == key);
             if (feedback is null) throw new KeyNotFoundException();
             return feedback;
@@ -34,10 +35,9 @@ namespace DataLayer
         public async Task<List<Feedback>> ReadAll(bool useNavigationalProperties = false, bool isReadOnly = false)
         {
             IQueryable<Feedback> query = dbContext.Feedbacks;
-            if (isReadOnly)
-            {
-                query = query.AsNoTrackingWithIdentityResolution();
-            }
+            if (isReadOnly) query = query.AsNoTrackingWithIdentityResolution();
+            if(useNavigationalProperties) query = query.Include(x => x.User);
+            
             return query.ToList();
         }
 

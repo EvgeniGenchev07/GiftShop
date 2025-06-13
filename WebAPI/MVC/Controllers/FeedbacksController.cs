@@ -7,22 +7,25 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BusinessLayer;
 using DataLayer;
+using Microsoft.AspNetCore.Identity;
 
 namespace MVC.Controllers
 {
     public class FeedbacksController : Controller
     {
         private readonly IDb<Feedback,int> _context;
+        private readonly UserManager<User> _userManager;
             
-        public FeedbacksController(FeedbackContext context)
+        public FeedbacksController(FeedbackContext context,UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Feedbacks
         public async Task<IActionResult> Index()
         {
-            return View(await _context.ReadAll());
+            return View(await _context.ReadAll(true,true));
         }
 
         // GET: Feedbacks/Details/5
@@ -57,6 +60,11 @@ namespace MVC.Controllers
         {
             if (ModelState.IsValid)
             {
+                User user = await _userManager.GetUserAsync(User);
+                if (user != null)
+                {
+                    feedback.User = user;
+                }
                 await _context.Create(feedback);
                 return RedirectToAction(nameof(Index));
             }

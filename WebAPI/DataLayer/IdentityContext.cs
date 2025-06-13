@@ -90,7 +90,8 @@ namespace DataLayer
                 var query = _context.Users
                     .Include(o => o.Orders)
                     .ThenInclude(o=>o.OrderedProducts)
-                    .ThenInclude(op=>op.Product);
+                    .ThenInclude(op=>op.Product)
+                    .Include(o => o.Feedbacks);
                 var user = await query.FirstOrDefaultAsync(u=>u.Id==key);
                 return user;
             }

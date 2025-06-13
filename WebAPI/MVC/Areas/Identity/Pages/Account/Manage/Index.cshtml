@@ -11,297 +11,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Basic Reset */
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Arial', sans-serif;
-        }
-
-        body {
-        line-height: 1.6;
-        color: #333;
-        background-color: #f9f9f9;
-        }
-
-
-
-        /* Header Styles */
-
-
-        /* Account Dashboard */
-        .account-dashboard {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding: 40px 0;
-        }
-
-        /* Sidebar Navigation */
-        .account-sidebar {
-        flex: 0 0 250px;
-        background: white;
-        margin-top: 2.5rem;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        padding: 20px;
-        }
-
-        .account-sidebar h3 {
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #eee;
-        color: #e63946;
-        }
-
-        .account-menu {
-        list-style: none;
-        }
-
-        .account-menu li {
-        margin-bottom: 10px;
-        }
-
-        .account-menu a {
-        display: block;
-        padding: 8px 0;
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s;
-        }
-
-        .account-menu a:hover, .account-menu a.active {
-        color: #e63946;
-        font-weight: bold;
-        }
-
-        .account-menu i {
-        width: 25px;
-        text-align: center;
-        margin-right: 10px;
-        }
-
-        /* Main Content Area */
-        .account-content {
-        flex: 1;
-        min-width: 300px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        padding: 30px;
-        }
-
         .account-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .no-reviews {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
+        }
+
+        .no-reviews i {
+            opacity: 0.5;
+        }
+
+        .reviews-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .review-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .review-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transform: translateY(-2px);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .no-orders {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .no-orders i {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+        .rating {
+            font-size: 1.1rem;
+        }
+
+        .review-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .review-body {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .review-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        /* Pagination */
+        .pagination-container {
+            margin-top: 30px;
+        }
+
+        .page-item.active .page-link {
+            background-color: #e63946;
+            border-color: #e63946;
+        }
+
+        .page-link {
+            color: #e63946;
+        }
+
+        /* Existing account styles */
+        .account-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
         }
 
         .account-header h2 {
-        color: #e63946;
-        }
-
-        .welcome-message {
-        margin-bottom: 20px;
-        }
-
-        /* Order Tracking */
-        .order-card {
-        border: 1px solid #eee;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 20px;
-        transition: box-shadow 0.3s;
-        }
-
-        .order-card:hover {
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .order-header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        }
-
-        .order-id {
-        font-weight: bold;
-        }
-
-        .order-date {
-        color: #666;
-        }
-
-        .order-status {
-        display: inline-block;
-        padding: 3px 10px;
-        border-radius: 20px;
-        font-size: 14px;
-        font-weight: bold;
-        }
-
-        .status-inprogress {
-        background-color: #fff3cd;
-        color: #856404;
-        }
-
-        .status-confirmed {
-        background-color: #cce5ff;
-        color: #004085;
-        }
-
-        .status-canceled {
-        background-color: #f8d7da;
-        color: #721c24;
-        }
-        .status-delivered {
-        background-color: #d4edda;
-        color: #155724;
-        }
-
-        .order-details {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 15px;
-        }
-
-        .order-items {
-        flex: 1;
-        min-width: 200px;
-        }
-
-        .order-item {
-        display: flex;
-        margin-bottom: 15px;
-        }
-
-        .order-item-img {
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 4px;
-        margin-right: 15px;
-        }
-
-        .order-summary {
-        flex: 0 0 200px;
-        }
-
-        .summary-row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        }
-
-        .order-actions {
-        margin-top: 20px;
-        display: flex;
-        gap: 10px;
-        }
-
-        .btn {
-        padding: 8px 15px;
-        border-radius: 4px;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s;
+            color: #e63946;
+            display: flex;
+            align-items: center;
+            margin: 0;
         }
 
         .btn-primary {
-        background-color: #e63946;
-        color: white;
+            background-color: #e63946;
+            border-color: #e63946;
+            display: inline-flex;
+            align-items: center;
         }
 
         .btn-primary:hover {
-        background-color: #c1121f;
+            background-color: #c1121f;
+            border-color: #c1121f;
         }
-
-        .btn-secondary {
-        background-color: #f1faee;
-        color: #333;
-        }
-
-        .btn-secondary:hover {
-        background-color: #e2e8e0;
-        }
-
-        /* Profile Section */
-        .profile-form {
-        max-width: 600px;
-        }
-
-        .form-group {
-        margin-bottom: 20px;
-        }
-
-        .form-group label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-        }
-
-        .form-control {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        }
-
-        /* Address Book */
-        .address-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-        }
-
-        .address-card {
-        border: 1px solid #eee;
-        border-radius: 8px;
-        padding: 20px;
-        position: relative;
-        }
-
-        .address-card.default {
-        border-color: #e63946;
-        }
-
-        .address-type {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #e63946;
-        color: white;
-        padding: 2px 8px;
-        border-radius: 4px;
-        font-size: 12px;
-        }
-
-        /* Responsive */
-        media (max-width: 768px) {
-        .account-dashboard
-
-        {
-        flex-direction: column;
-        }
-
-        .account-sidebar {
-        flex: 1;
-        }
-
-        .order-header {
-        flex-direction: column;
-        gap: 10px;
-        }
-
+        
+        i{
+            margin-right: 0.5rem !important;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -313,7 +137,7 @@
         <!-- Main Content Area -->
         <main class="account-content">
             <div class="account-header">
-                <h2>Order Dashboard</h2>
+                <h2>Dashboard</h2>
                 <div class="welcome-message">Welcome back, @Model.Data.Name!</div>
             </div>
 
@@ -322,6 +146,9 @@
 
             <!-- Order Card 1 -->
             @{
+                if (Model.Data.Orders.Any())
+                {
+                    
                 string[] months = ["January", "February", "March", "April", "May", "June", 
                     "July", "August", "September", "October", "November", "December"];
                 foreach (var item in Model.Data.Orders)
@@ -368,7 +195,7 @@
                                 </div>
                                 <div class="summary-row" style="font-weight: bold; font-size: 1.1em;">
                                     <span>Total:</span>
-                                    <span>$@($"{total:f2}")</span>
+                                    <span>$@($"{total+(total <= 100?10:0):f2}")</span>
                                 </div>
                             </div>
                         </div>
@@ -385,26 +212,59 @@
 
                 }
             }
+                
+                else
+                {
+                    <div class="no-orders">
+                        <i class="fas fa-box-open"></i>
+                        <h3>No orders found</h3>
+                        <p>You haven't placed any orders!</p>
+                        <a asp-action="Index" asp-controller="Products" class="btn btn-primary" style="margin-top: 20px;">Start Shopping</a>
+                        </div>
+                }
+            }
+            <h3>Recent Feedbacks</h3>
+
+            @if (Model.Data.Feedbacks.Count == 0)
+            {
+                <div class="review-card no-reviews">
+                    <i class="fas fa-comment-slash fa-3x text-muted mb-3"></i>
+                    <h4>No Reviews Yet</h4>
+                    <p>You haven't submitted any reviews yet.</p>
+                    <a asp-action="Create" asp-controller="Feedbacks" class="btn btn-primary mt-3">
+                        <i class="fas fa-pen-fancy mr-2"></i>
+                        Write Your First Review
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="reviews-list">
+                    @foreach (var feedback in Model.Data.Feedbacks)
+                    {
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="rating">
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        <i class="fas fa-star @(i <= feedback.Rating ? "text-warning" : "text-muted")"></i>
+                                    }
+                                </div>
+                                <div class="review-date">
+                                    @feedback.Created.ToString("MMMM dd, yyyy")
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>@feedback.Review</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
         </main>
     </div>
 </div>
-<script>
-    document.querySelectorAll('button[name="reorder-btn"]').forEach(btn=>btn.addEventListener('click', function () {
-        const card = this.closest('.order-card');
-        const items = card.querySelectorAll('.order-item');
-        const basket = [];
-        items.forEach(item => {
-            const productId = item.getAttribute('data-id');
-            const quantity = parseInt(item.getAttribute('data-quantity'));
-            basket.push({ id:productId, quantity });
-        })
-        sessionStorage.setItem('basket', JSON.stringify(basket));
-        window.location.href = '/Orders/Create';
-    }));
-    document.querySelectorAll('button[name="cancel-btn"]').forEach(btn=>btn.addEventListener('click', function () {
-        const card = this.closest('.order-card');
-    }));
-</script>
+<script src="~/js/order.js"></script>
 </body>
 </html>
 

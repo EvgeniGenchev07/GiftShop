@@ -8,6 +8,7 @@ namespace BusinessLayer
 {
     public enum Status
     {
+        None,
         Confirmed,
         Delivered,
         InProgress,

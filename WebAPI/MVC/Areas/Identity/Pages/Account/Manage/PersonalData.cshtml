@@ -1,27 +1,151 @@
 ﻿@page
 @model PersonalDataModel
 @{
-    ViewData["Title"] = "Personal Data";
+    ViewData["Title"] = "Manage Your Personal Data";
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
 
-<h4>@ViewData["Title"]</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reuse your existing styles */
+        .item-count{
+            margin-right: -0.5rem !important;
+        }
 
-<div class="row">
-    <div class="col-md-6">
-        <p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
-        <p>
-            <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
-        </p>
-        <form id="download-data" asp-page="DownloadPersonalData" method="post" class="form-group">
-            <button class="btn btn-primary" type="submit">Download</button>
-        </form>
-        <p>
-            <a id="delete" asp-page="DeletePersonalData" class="btn btn-secondary">Delete</a>
-        </p>
+        .account-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .account-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .account-header h2 {
+            color: #e63946;
+        }
+
+        .data-actions {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: #e63946;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #c1121f;
+        }
+
+        .btn-secondary {
+            background-color: #f1faee;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e2e8e0;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .description {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        media (max-width: 768px) {
+            .data-actions {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="account-dashboard">
+        <main class="account-content">
+            <div class="account-header">
+                <h2>Your Personal Data</h2>
+            </div>
+
+            <div class="description">
+                <p>We respect your privacy and want you to have full control over your personal information. On this page, you can:</p>
+                <ul style="margin: 15px 0 15px 20px;">
+                    <li>Download a copy of all personal data we store about you</li>
+                    <li>Permanently delete your account and all associated data</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Important:</strong> Deleting your account will immediately and permanently remove all your personal information from our systems. This action cannot be undone, and you will lose access to all your account features, order history, and saved preferences.</p>
+            </div>
+
+            <div class="data-actions justify-content-between">
+                <form id="download-data" asp-page="DownloadPersonalData" method="post">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-file-download"></i> Download My Data
+                    </button>
+                </form>
+                
+                <a id="delete" asp-page="DeletePersonalData" class="btn btn-secondary">
+                    <i class="fas fa-trash-alt"></i> Delete My Account
+                </a>
+            </div>
+
+            <div style="margin-top: 30px; font-size: 0.9em; color: #666;">
+                <p>Need help or have questions about your data? <a href="mailto:privacy@giftshop.bg" style="color: #e63946;">Contact our privacy team</a> for assistance.</p>
+            </div>
+        </main>
     </div>
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('delete').addEventListener('click', function(e) {
+            if (!confirm('Are you sure you want to permanently delete your account and all associated data? This action cannot be undone.')) {
+                e.preventDefault();
+            }
+        });
+    </script>
 }
+</body>
+</html>

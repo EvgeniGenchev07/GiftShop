@@ -22,7 +22,13 @@ namespace DataLayer
             for (int i = 0; i < item.OrderedProducts.Count; ++i)
             {
                 Product productFromDb = await dbContext.Products.FirstOrDefaultAsync(p => p.Id == item.OrderedProducts[i].Product.Id);
-                if (productFromDb != null) item.OrderedProducts[i].Product = productFromDb;
+                if (productFromDb != null)
+                {
+                    item.OrderedProducts[i].Product = productFromDb;
+                    if(item.OrderedProducts[i].Quantity <= item.OrderedProducts[i].Product.Quantity) 
+                        item.OrderedProducts[i].Product.Quantity -= item.OrderedProducts[i].Quantity;
+                    else throw new ArgumentException($"Not enough quantity of product {item.OrderedProducts[i].Product.Name}!");
+                }
             }
             
             dbContext.Orders.Add(item);

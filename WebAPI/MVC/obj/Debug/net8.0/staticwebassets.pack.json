@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/MVC.n9dr0253rs.bundle.scp.css"
     },
     {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/account.css",
+      "PackagePath": "staticwebassets/css/account.css"
+    },
+    {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
       "PackagePath": "staticwebassets/css/bascket.css"
     },
@@ -19,10 +23,6 @@
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/responsive.css",
       "PackagePath": "staticwebassets/css/responsive.css"
-    },
-    {
-      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/style.css",
@@ -143,6 +143,10 @@
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/jquery-3.4.1.min.js",
       "PackagePath": "staticwebassets/js/jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/order.js",
+      "PackagePath": "staticwebassets/js/order.js"
     },
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/products.js",

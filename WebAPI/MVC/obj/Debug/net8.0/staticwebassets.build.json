@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KZRRQLHwVXHVwNTjZQye9x2VoIdr3G31WHSDnG4FLjI=",
+  "Hash": "p4IbE613kRetkBqPPZHFNO81+dj0G6H08TeoyrwjUPk=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/obj/Debug/net8.0/scopedcss/projectbundle/MVC.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/account.css",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
+      "BasePath": "_content/MVC",
+      "RelativePath": "css/account#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hujc85zee1",
+      "Integrity": "edujIEdBEjUfrmC9TKPoY8mvJ9pxSq1FqBiUBLLxwqU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/account.css"
     },
     {
       "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
@@ -141,27 +162,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/responsive.css"
-    },
-    {
-      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/site.css",
-      "SourceId": "MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
-      "BasePath": "_content/MVC",
-      "RelativePath": "css/site#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
       "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/style.css",
@@ -792,6 +792,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/jquery-3.4.1.min.js"
+    },
+    {
+      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/order.js",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
+      "BasePath": "_content/MVC",
+      "RelativePath": "js/order#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a4pqpg2pqp",
+      "Integrity": "qlq+iqcbKFRDzpUBGcAwB22dg6p1wMDpMjlaIWzDbR4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/order.js"
     },
     {
       "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/products.js",
@@ -2035,6 +2056,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/account.css",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"edujIEdBEjUfrmC9TKPoY8mvJ9pxSq1FqBiUBLLxwqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 15:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-edujIEdBEjUfrmC9TKPoY8mvJ9pxSq1FqBiUBLLxwqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.hujc85zee1.css",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"edujIEdBEjUfrmC9TKPoY8mvJ9pxSq1FqBiUBLLxwqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 15:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hujc85zee1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-edujIEdBEjUfrmC9TKPoY8mvJ9pxSq1FqBiUBLLxwqU="
+        }
+      ]
+    },
+    {
       "Route": "css/bascket.css",
       "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
       "Selectors": [],
@@ -2359,88 +2462,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-j6foTp7/q8xJpigcXHRw9qjBb3bZjndanhHvZ/JR7ww="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.5ipweew5fc.css",
-      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
@@ -4901,6 +4922,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-TCTf0oeErSvvs9r6rGvx7U581YzOcT2aCyKNQm6BK68="
+        }
+      ]
+    },
+    {
+      "Route": "js/order.a4pqpg2pqp.js",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/order.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qlq+iqcbKFRDzpUBGcAwB22dg6p1wMDpMjlaIWzDbR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 14:50:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a4pqpg2pqp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/order.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qlq+iqcbKFRDzpUBGcAwB22dg6p1wMDpMjlaIWzDbR4="
+        }
+      ]
+    },
+    {
+      "Route": "js/order.js",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/order.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qlq+iqcbKFRDzpUBGcAwB22dg6p1wMDpMjlaIWzDbR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 14:50:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qlq+iqcbKFRDzpUBGcAwB22dg6p1wMDpMjlaIWzDbR4="
         }
       ]
     },

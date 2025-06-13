@@ -30,6 +30,8 @@ namespace DataLayer
             {
                 u.HasMany(u => u.Orders)
                 .WithOne(o => o.User);
+                u.HasMany(u => u.Feedbacks)
+                .WithOne(f => f.User);
             });
             modelBuilder.Entity<Product>().Property(p=>p.ImagePath).IsRequired().HasMaxLength(70);
             modelBuilder.Entity<OrderedProduct>().HasOne(p => p.Product).WithMany();

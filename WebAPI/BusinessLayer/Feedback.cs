@@ -23,6 +23,7 @@ namespace BusinessLayer
         [MaxLength(1_000, ErrorMessage = "Review must not be more than 1000 symbols!")]
         [MinLength(2, ErrorMessage = "Review must be at least 2 symbols!")]
         public string Review { get; set; }
+        public DateTime Created { get; set; }
 
         public Feedback()
         {
@@ -34,12 +35,13 @@ namespace BusinessLayer
             User = user;
             Rating = rating;
             Review = review;
-
+            Created = DateTime.Now;
         }
         public Feedback(int rating, string review)
         {
             Rating = rating;
             Review = review;
+            Created = DateTime.Now;
         }
     }
 }

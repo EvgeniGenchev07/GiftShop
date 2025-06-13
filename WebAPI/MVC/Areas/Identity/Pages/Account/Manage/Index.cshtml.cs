@@ -15,20 +15,16 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
     public partial class IndexModel : PageModel
     {
         private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
         private readonly IdentityContext _identityContext;
 
         public IndexModel(
             UserManager<User> userManager,
-            SignInManager<User> signInManager,
             IdentityContext identityContext)
         {
             _userManager = userManager;
-            _signInManager = signInManager;
             _identityContext = identityContext;
         }
 
-        public string Username { get; set; }
 
         [TempData]
         public string StatusMessage { get; set; }
@@ -41,15 +37,16 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
            
             public string Name { get; set; }
             public List<Order> Orders { get; set; }
+            public List<Feedback> Feedbacks { get; set; }
         }
 
         private async Task LoadAsync(User user)
         {
-
             Data = new DataModel
             {
                 Name = user.Name,
-                Orders = user.Orders?? new List<Order>(),
+                Orders = user.Orders is null? new List<Order>(): user.Orders.Take(3).ToList(),
+                Feedbacks = user.Feedbacks is null? new List<Feedback>(): user.Feedbacks.Take(3).ToList(),
             };
         }
 
@@ -65,7 +62,5 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
             await LoadAsync(user);
             return Page();
         }
-
-       
     }
 }

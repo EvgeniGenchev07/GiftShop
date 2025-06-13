@@ -6,6 +6,8 @@
 @{
     var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    //var account = Context.Request.Path.Value.Contains("Identity");
+    var account = ViewContext.RouteData.Values["area"]?.ToString() == "Identity";
 }
 
 <div class="hero_area">
@@ -44,7 +46,7 @@
                         <div class="basket-icon" style="position: relative;">
                             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
 
-                            <span class="item-count" style="position: absolute; bottom: -6px; right: -10px; background-color: #ff4757; color: white; border-radius: 50%; width: 15px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; transition: all 0.3s ease;" id="basket-span"></span>
+                            <span class="item-count" style="position: absolute; bottom: -6px; right: @(!account?"-10px":"-0.2rem") !important; background-color: #ff4757; color: white; border-radius: 50%; width: 15px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; transition: all 0.3s ease;" id="basket-span"></span>
                         </div>
                     </a>
                     <partial name="_LoginPartial"/>
