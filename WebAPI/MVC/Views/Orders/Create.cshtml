@@ -1,6 +1,4 @@
-﻿@using BusinessLayer
-@using Newtonsoft.Json
-@model BusinessLayer.Order
+﻿@model BusinessLayer.Order
 @{
     ViewData["Title"] = "Basket";
 }
@@ -70,14 +68,14 @@
 </div>
 
 <script>
-    document.getElementById("submitButton").addEventListener("click",()=>{
-        const total = document.querySelector('.summary-total').lastElementChild.textContent.replace('$','');
-        if (total!="" && parseFloat(total)!== 0){
+    document.getElementById("submitButton").addEventListener("click", () => {
+        const total = document.querySelector('.summary-total').lastElementChild.textContent.replace('$', '');
+        if (total != "" && parseFloat(total) !== 0) {
             document.getElementById("form").submit();
         }
     });
     document.getElementById("submitButton").disabled = true;
-    const model = (object,name,imagePath,quantity,price,totalQuantity)=>` 
+    const model = (object, name, imagePath, quantity, price, totalQuantity) => ` 
         <div class="cart-item">
             <button class="remove-btn" aria-label="Remove item">
                 ×
@@ -99,21 +97,21 @@
                 </div>
             </div>
             <div class="total-col">
-                <div class="item-total">$${(price*quantity).toFixed(2)}</div>
+                <div class="item-total">$${(price * quantity).toFixed(2)}</div>
             </div>
             <input hidden="hidden" class="op-object" value='${object}'/>
         </div>`;
 
     const basketTemp = sessionStorage.getItem("basket");
-    if(basketTemp){
+    if (basketTemp) {
         const object = JSON.parse(basketTemp);
-        console.log(JSON.stringify([object.map(r=>r.id),object.map(r =>r.quantity)]));
-        fetch("../Products/GetAllById",{
-            method:"Post",
-            headers:{
+        console.log(JSON.stringify([object.map(r => r.id), object.map(r => r.quantity)]));
+        fetch("../Products/GetAllById", {
+            method: "Post",
+            headers: {
                 'Content-Type': 'application/json'
             },
-            body:JSON.stringify([object.map(r=>r.id),object.map(r =>r.quantity)])
+            body: JSON.stringify([object.map(r => r.id), object.map(r => r.quantity)])
         }).then(response => {
             console.log(response);
             if (!response.ok) {
@@ -124,16 +122,16 @@
             .then(data => {
                 const stringObject = JSON.stringify(data);
                 document.getElementById("productsString").value = stringObject;
-                if(data.length>0) document.getElementById("submitButton").disabled = false;
-                for(let i = 0; i < data.length; ++i){
+                if (data.length > 0) document.getElementById("submitButton").disabled = false;
+                for (let i = 0; i < data.length; ++i) {
                     document.getElementById("container").insertAdjacentHTML("beforeend",
-                        model(JSON.stringify(data[i]), data[i].product.name,data[i].product.imagePath, data[i].quantity, data[i].product.price, data[i].product.quantity));
+                        model(JSON.stringify(data[i]), data[i].product.name, data[i].product.imagePath, data[i].quantity, data[i].product.price, data[i].product.quantity));
                 }
                 document.getElementById("loader").classList.add("inactive");
                 document.getElementById("product-page").classList.remove("inactive");
                 // Quantity controls
                 document.querySelectorAll('.qty-btn').forEach(button => {
-                    button.addEventListener('click', function() {
+                    button.addEventListener('click', function () {
                         const basket_span = document.getElementById("basket-span");
                         const input = this.parentNode.querySelector('.qty-input');
                         let value = parseInt(input.value);
@@ -141,10 +139,9 @@
 
                         if (this.textContent === '-') {
                             input.value = value - 1;
-                            if(value > 1){
+                            if (value > 1) {
                                 input.value = value - 1;
-                            }
-                            else{
+                            } else {
                                 removeItem(this);
                             }
                             basket_span.innerHTML = parseInt(basket_span.innerHTML) - 1;
@@ -161,7 +158,7 @@
 
                 // Quantity input changes
                 document.querySelectorAll('.qty-input').forEach(input => {
-                    input.addEventListener('change', function() {
+                    input.addEventListener('change', function () {
                         const max = parseInt(this.max);
                         if (this.value < 1) this.value = 1;
                         if (this.value > max) this.value = max;
@@ -174,18 +171,19 @@
 
                 // Remove items
                 document.querySelectorAll('.remove-btn').forEach(button => {
-                    button.addEventListener('click', function() {
+                    button.addEventListener('click', function () {
                         removeItem(this);
                     });
                 });
-                function removeItem(item){
+
+                function removeItem(item) {
                     const basket_span = document.getElementById("basket-span");
                     const card = item.closest('.cart-item');
                     const json = JSON.parse(card.querySelector('.op-object').value);
                     const id = json.product.id;
                     const basket = JSON.parse(sessionStorage.getItem("basket"));
                     const filtered_basket = basket.filter(item => item.id != id);
-                    if(filtered_basket.length == 0) {
+                    if (filtered_basket.length == 0) {
                         basket_span.style.display = 'none';
                     }
                     sessionStorage.setItem("basket", JSON.stringify(filtered_basket));
@@ -193,11 +191,12 @@
                     updateOrderSummary();
 
                     // Disable checkout if no items left
-                    if(document.querySelectorAll('.cart-item').length === 0) {
+                    if (document.querySelectorAll('.cart-item').length === 0) {
                         document.getElementById("submitButton").disabled = true;
                     }
                 }
-                function updateObject(item){
+
+                function updateObject(item) {
                     const quantity = parseInt(item.querySelector('.qty-input').value);
                     let object = JSON.parse(item.querySelector('.op-object').value);
                     object.quantity = quantity;
@@ -207,7 +206,7 @@
                     let basket = JSON.parse(sessionStorage.getItem("basket"));
                     const itemId = object.product.id;
                     const index = basket.findIndex(item => item.id == itemId);
-                    if(index !== -1) {
+                    if (index !== -1) {
                         basket[index].quantity = quantity;
                         sessionStorage.setItem("basket", JSON.stringify(basket));
                     }
@@ -226,15 +225,15 @@
                     document.querySelectorAll('.item-total').forEach(total => {
                         orderTotal += parseFloat(total.textContent.replace('$', ''));
                     });
-                     console.log(orderTotal)
-                        const tax = (orderTotal * 0.2).toFixed(2);
-                        let subtotal = orderTotal*0.8;
+                    console.log(orderTotal)
+                    const tax = (orderTotal * 0.2).toFixed(2);
+                    let subtotal = orderTotal * 0.8;
 
-                        document.querySelectorAll('.summary-row')[0].lastElementChild.textContent = `$${subtotal.toFixed(2)}`;
-                            document.querySelectorAll('.summary-row')[1].lastElementChild.textContent = `${orderTotal<=100?"$10.00":"Free"}`;
-                               orderTotal+= orderTotal<=100?10:0;
+                    document.querySelectorAll('.summary-row')[0].lastElementChild.textContent = `$${subtotal.toFixed(2)}`;
+                    document.querySelectorAll('.summary-row')[1].lastElementChild.textContent = `${orderTotal <= 100 ? "$10.00" : "Free"}`;
+                    orderTotal += orderTotal <= 100 ? 10 : 0;
                     document.querySelectorAll('.summary-row')[2].lastElementChild.textContent = `$${tax}`;
-                        document.querySelector('.summary-total').lastElementChild.textContent = `$${orderTotal.toFixed(2)}`;
+                    document.querySelector('.summary-total').lastElementChild.textContent = `$${orderTotal.toFixed(2)}`;
 
                     // Update productsString with current quantities
                     const products = Array.from(document.querySelectorAll('.op-object')).map(el => JSON.parse(el.value));
@@ -246,8 +245,7 @@
             .catch(error => {
                 console.error("Fetch error:", error);
             });
-    }
-    else{
+    } else {
         document.getElementById("loader").classList.add("inactive");
         document.getElementById("product-page").classList.remove("inactive");
     }
@@ -256,5 +254,5 @@
 </html>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 }

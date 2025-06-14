@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BusinessLayer;
 
-namespace BusinessLayer
+public enum Status
 {
-    public enum Status
-    {
-        None,
-        Confirmed,
-        InProgress,
-        Delivered,
-        Canceled,
-    }
+    None,
+    Confirmed,
+    InProgress,
+    Delivered,
+    Canceled
 }

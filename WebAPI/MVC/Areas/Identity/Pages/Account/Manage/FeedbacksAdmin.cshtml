@@ -1,5 +1,4 @@
 @page
-@using Microsoft.EntityFrameworkCore.Metadata.Internal
 @model FeedbacksAdminModel
 @{
     ViewData["Title"] = "Manage Reviews";
@@ -7,7 +6,7 @@
 }
 
 <style>
-    .admin-header{
+    .admin-header {
         background: #f8f9fa;
         padding: 15px 20px;
         display: flex;
@@ -16,21 +15,22 @@
         margin-bottom: 2rem;
         margin-top: 2.3rem;
     }
+
     .reviews-container {
         background: white;
         border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         padding: 20px;
         margin-bottom: 2rem;
     }
-    
+
     .review-card {
         border: 1px solid #eee;
         border-radius: 8px;
         margin-bottom: 15px;
         overflow: hidden;
     }
-    
+
     .review-header {
         background: #f8f9fa;
         padding: 12px 15px;
@@ -39,39 +39,39 @@
         align-items: center;
         cursor: pointer;
     }
-    
+
     .review-details {
         padding: 15px;
         display: none;
     }
-    
+
     .review-details.active {
         display: block;
     }
-    
+
     .review-rating {
         color: #ffc107; /* Gold stars */
         margin-right: 10px;
     }
-    
+
     .review-user {
         font-weight: 600;
         color: #333;
     }
-    
+
     .review-date {
         color: #6c757d;
         font-size: 0.9rem;
     }
-    
+
     .review-text {
         padding: 15px;
         background: #f9f9f9;
         border-radius: 4px;
         margin-bottom: 10px;
     }
-    
-    .item-count{
+
+    .item-count {
         margin-right: -0.5rem !important;
     }
 </style>
@@ -87,25 +87,25 @@
             <div class="review-header" onclick="toggleReviewDetails(this)">
                 <div>
                     <span class="review-rating">
-                        @for (int i = 1; i <= 5; i++)
+                        @for (var i = 1; i <= 5; i++)
                         {
                             <i class="fas fa-star @(i <= feedback.Rating ? "text-warning" : "text-muted")"></i>
                         }
                     </span>
-                    <span class="review-user">@(feedback.User is not null? feedback.User.Name:"Anonymous")</span>
+                    <span class="review-user">@(feedback.User is not null ? feedback.User.Name : "Anonymous")</span>
                     <span class="review-date">@feedback.Created.ToString("MMM dd, yyyy")</span>
                 </div>
                 <div>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
-            
+
             <div class="review-details">
                 <div class="review-text">
                     @feedback.Review
                 </div>
                 <form method="post" asp-page-handler="DeleteReview" asp-route-id="@feedback.Id">
-                    <button type="submit" class="btn btn-primary" 
+                    <button type="submit" class="btn btn-primary"
                             onclick="return confirm('Are you sure you want to delete this review?')">
                         <i style="margin-right: 0.4rem" class="fas fa-trash-alt"></i> Delete Review
                     </button>

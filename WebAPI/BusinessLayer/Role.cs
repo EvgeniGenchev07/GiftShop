@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BusinessLayer;
 
-namespace BusinessLayer
+public enum Role
 {
-    public enum Role
-    {
-        Administrator,
-        User,
-        Unspecified
-    }
+    Administrator,
+    User,
+    Unspecified
 }

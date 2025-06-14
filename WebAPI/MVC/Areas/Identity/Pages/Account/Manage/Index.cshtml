@@ -40,7 +40,7 @@
         }
 
         .review-card:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transform: translateY(-2px);
         }
 
@@ -50,6 +50,7 @@
             align-items: center;
             margin-bottom: 15px;
         }
+
         .no-orders {
             text-align: center;
             padding: 40px;
@@ -61,6 +62,7 @@
             margin-bottom: 20px;
             color: #ddd;
         }
+
         .rating {
             font-size: 1.1rem;
         }
@@ -99,7 +101,7 @@
         .account-content {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
 
@@ -121,8 +123,8 @@
             background-color: #c1121f;
             border-color: #c1121f;
         }
-        
-        i{
+
+        i {
             margin-right: 0.5rem !important;
         }
     </style>
@@ -148,82 +150,93 @@
             @{
                 if (Model.Data.Orders.Any())
                 {
-                    
-                string[] months = ["January", "February", "March", "April", "May", "June", 
-                    "July", "August", "September", "October", "November", "December"];
-                foreach (var item in Model.Data.Orders)
-                {
-                    decimal total = item.OrderedProducts.Sum(o => o.Quantity * o.Product.Price);
-                    var status = item.Status;
-                    var dateOfCreation = item.Created;
-                    <div class="order-card" data-id="@item.Id">
-                        <div class="order-header">
-                            <div>
-                                <span class="order-id">Order #@item.Id</span>
-                                <span class="order-date"> - Placed on @months[dateOfCreation.Month-1] @dateOfCreation.Day, @dateOfCreation.Year</span>
+                    string[] months =
+                    [
+                        "January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                    ];
+                    foreach (var item in Model.Data.Orders)
+                    {
+                        var total = item.OrderedProducts.Sum(o => o.Quantity * o.Product.Price);
+                        var status = item.Status;
+                        var dateOfCreation = item.Created;
+                        <div class="order-card" data-id="@item.Id">
+                            <div class="order-header">
+                                <div>
+                                    <span class="order-id">Order #@item.Id</span>
+                                    <span
+                                        class="order-date"> - Placed on @months[dateOfCreation.Month - 1] @dateOfCreation.Day, @dateOfCreation.Year</span>
+                                </div>
+                                <span
+                                    class="order-status status-@status.ToString().ToLower()">@(status == Status.InProgress ? "In Progress" : status.ToString())</span>
                             </div>
-                            <span class="order-status status-@status.ToString().ToLower()">@(status == Status.InProgress?"In Progress":status.ToString())</span>
-                        </div>
 
-                        <div class="order-details">
-                            <div class="order-items">
-                                @foreach (var orderedProduct in item.OrderedProducts)
-                                {
-                                    <div class="order-item" data-id="@orderedProduct.Product.Id" data-quantity="@orderedProduct.Quantity">
-                                        <img src="@orderedProduct.Product.ImagePath" alt="" class="order-item-img">
-                                        <div>
-                                            <h4>@orderedProduct.Product.Name</h4>
-                                            <p>Quantity: @orderedProduct.Quantity</p>
-                                            <p>$@($"{orderedProduct.Product.Price:f2}")@(orderedProduct.Quantity>1?" each":"")</p>
+                            <div class="order-details">
+                                <div class="order-items">
+                                    @foreach (var orderedProduct in item.OrderedProducts)
+                                    {
+                                        <div class="order-item" data-id="@orderedProduct.Product.Id"
+                                             data-quantity="@orderedProduct.Quantity">
+                                            <img src="@orderedProduct.Product.ImagePath" alt="" class="order-item-img">
+                                            <div>
+                                                <h4>@orderedProduct.Product.Name</h4>
+                                                <p>Quantity: @orderedProduct.Quantity</p>
+                                                <p>
+                                                    $@($"{orderedProduct.Product.Price:f2}")@(orderedProduct.Quantity > 1 ? " each" : "")</p>
+                                            </div>
                                         </div>
+                                    }
+                                </div>
+
+                                <div class="order-summary">
+                                    <div class="summary-row">
+                                        <span>Subtotal:</span>
+                                        <span>$@($"{(double)total * 0.8:f2}")</span>
                                     </div>
+                                    <div class="summary-row">
+                                        <span>Shipping:</span>
+                                        <span>$@(total <= 100 ? "10.00" : "Free")</span>
+                                    </div>
+                                    <div class="summary-row">
+                                        <span>Tax:</span>
+                                        <span>$@($"{(double)total * 0.2:f2}")</span>
+                                    </div>
+                                    <div class="summary-row" style="font-weight: bold; font-size: 1.1em;">
+                                        <span>Total:</span>
+                                        <span>$@($"{total + (total <= 100 ? 10 : 0):f2}")</span>
+                                    </div>
+                                </div>
+                            </div>
+                            @{
+                                var isVisibleForNotCanceled = status == Status.Canceled ? "d-none" : "";
+                            }
+                            <div class="order-actions">
+                                @if (!item.OrderedProducts.Any(op => op.Quantity > op.Product.Quantity || op.Product.Status != ProductStatus.InStock))
+                                {
+                                    <button name="reorder-btn" class="btn btn-primary">Reorder</button>
                                 }
-                            </div>
-
-                            <div class="order-summary">
-                                <div class="summary-row">
-                                    <span>Subtotal:</span>
-                                    <span>$@($"{((double)total * 0.8):f2}")</span>
-                                </div>
-                                <div class="summary-row">
-                                    <span>Shipping:</span>
-                                    <span>$@(total <= 100 ? "10.00":"Free")</span>
-                                </div>
-                                <div class="summary-row">
-                                    <span>Tax:</span>
-                                    <span>$@($"{((double)total * 0.2):f2}")</span>
-                                </div>
-                                <div class="summary-row" style="font-weight: bold; font-size: 1.1em;">
-                                    <span>Total:</span>
-                                    <span>$@($"{total+(total <= 100?10:0):f2}")</span>
-                                </div>
+                                <a asp-action="Create" asp-controller="Feedbacks"
+                                   class="btn btn-secondary @isVisibleForNotCanceled">Leave Review</a>
+                                <button name="cancel-btn"
+                                        class="btn btn-secondary @(status != Status.InProgress && status != Status.Confirmed ? "d-none" : "")">
+                                    Cancel Order
+                                </button>
+                                <a href="mailto:support@giftshob.bg" class="btn btn-secondary @isVisibleForNotCanceled">Contact
+                                    Support</a>
                             </div>
                         </div>
-                        @{
-                            string isVisibleForNotCanceled = status == Status.Canceled ? "d-none" : "";
-                        }
-                        <div class="order-actions">
-                        @if (!item.OrderedProducts.Any(op => op.Quantity > op.Product.Quantity || op.Product.Status != ProductStatus.InStock))
-                        {
-                            <button name="reorder-btn" class="btn btn-primary">Reorder</button>
-                        }
-                        <a asp-action="Create" asp-controller="Feedbacks" class="btn btn-secondary @isVisibleForNotCanceled">Leave Review</a>
-                            <button name="cancel-btn" class="btn btn-secondary @(status != Status.InProgress && status != Status.Confirmed ? "d-none" : "")">Cancel Order</button>
-                            <a href="mailto:support@giftshob.bg" class="btn btn-secondary @isVisibleForNotCanceled">Contact Support</a>
-                        </div>
-                    </div>
-
+                    }
                 }
-            }
-                
+
                 else
                 {
                     <div class="no-orders">
                         <i class="fas fa-box-open"></i>
                         <h3>No orders found</h3>
                         <p>You haven't placed any orders!</p>
-                        <a asp-action="Index" asp-controller="Products" class="btn btn-primary" style="margin-top: 20px;">Start Shopping</a>
-                        </div>
+                        <a asp-action="Index" asp-controller="Products" class="btn btn-primary"
+                           style="margin-top: 20px;">Start Shopping</a>
+                    </div>
                 }
             }
             <h3>Recent Feedbacks</h3>
@@ -248,7 +261,7 @@
                         <div class="review-card">
                             <div class="review-header">
                                 <div class="rating">
-                                    @for (int i = 1; i <= 5; i++)
+                                    @for (var i = 1; i <= 5; i++)
                                     {
                                         <i class="fas fa-star @(i <= feedback.Rating ? "text-warning" : "text-muted")"></i>
                                     }
@@ -272,5 +285,5 @@
 </html>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"/>
 }

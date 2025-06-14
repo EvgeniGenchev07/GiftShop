@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .item-count{
+        .item-count {
             margin-right: -0.5rem !important;
         }
 
@@ -29,7 +29,7 @@
             min-width: 300px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
 
@@ -89,7 +89,7 @@
         }
 
         .order-card:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .order-header {
@@ -128,6 +128,7 @@
             background-color: #f8d7da;
             color: #721c24;
         }
+
         .status-delivered {
             background-color: #d4edda;
             color: #155724;
@@ -217,10 +218,12 @@
             .account-dashboard {
                 flex-direction: column;
             }
+
             .order-header {
                 flex-direction: column;
                 gap: 10px;
             }
+
             .order-actions {
                 flex-wrap: wrap;
             }
@@ -241,16 +244,21 @@
 
             <!-- Order Filters -->
             <div class="order-filters">
-                <button class="filter-btn @(Model.Data.SelectedStatus == default(Status) ? "active" : "")" 
-                        onclick="window.location.href='?status='">All</button>
-                <button class="filter-btn @(Model.Data.SelectedStatus == Status.InProgress ? "active" : "")" 
-                        onclick="window.location.href='?status=InProgress'">In Progress</button>
-                <button class="filter-btn @(Model.Data.SelectedStatus == Status.Confirmed ? "active" : "")" 
-                        onclick="window.location.href='?status=Confirmed'">Confirmed</button>
-                <button class="filter-btn @(Model.Data.SelectedStatus == Status.Delivered ? "active" : "")" 
-                        onclick="window.location.href='?status=Delivered'">Delivered</button>
-                <button class="filter-btn @(Model.Data.SelectedStatus == Status.Canceled ? "active" : "")" 
-                        onclick="window.location.href='?status=Canceled'">Canceled</button>
+                <button class="filter-btn @(Model.Data.SelectedStatus == default ? "active" : "")"
+                        onclick="window.location.href='?status='">All
+                </button>
+                <button class="filter-btn @(Model.Data.SelectedStatus == Status.InProgress ? "active" : "")"
+                        onclick="window.location.href='?status=InProgress'">In Progress
+                </button>
+                <button class="filter-btn @(Model.Data.SelectedStatus == Status.Confirmed ? "active" : "")"
+                        onclick="window.location.href='?status=Confirmed'">Confirmed
+                </button>
+                <button class="filter-btn @(Model.Data.SelectedStatus == Status.Delivered ? "active" : "")"
+                        onclick="window.location.href='?status=Delivered'">Delivered
+                </button>
+                <button class="filter-btn @(Model.Data.SelectedStatus == Status.Canceled ? "active" : "")"
+                        onclick="window.location.href='?status=Canceled'">Canceled
+                </button>
             </div>
 
             <!-- Orders List -->
@@ -258,7 +266,7 @@
             {
                 @foreach (var item in Model.Data.Orders)
                 {
-                    decimal total = item.OrderedProducts.Sum(o => o.Quantity * o.Product.Price);
+                    var total = item.OrderedProducts.Sum(o => o.Quantity * o.Product.Price);
                     var status = item.Status;
                     var dateOfCreation = item.Created;
                     <div class="order-card" data-id="@item.Id">
@@ -267,19 +275,22 @@
                                 <span class="order-id">Order #@item.Id</span>
                                 <span class="order-date"> - Placed on @dateOfCreation.ToString("MMMM dd, yyyy")</span>
                             </div>
-                            <span class="order-status status-@status.ToString().ToLower()">@(status == Status.InProgress?"In Progress":status.ToString())</span>
+                            <span
+                                class="order-status status-@status.ToString().ToLower()">@(status == Status.InProgress ? "In Progress" : status.ToString())</span>
                         </div>
 
                         <div class="order-details">
                             <div class="order-items">
                                 @foreach (var orderedProduct in item.OrderedProducts)
                                 {
-                                    <div class="order-item" data-id="@orderedProduct.Product.Id" data-quantity="@orderedProduct.Quantity">
+                                    <div class="order-item" data-id="@orderedProduct.Product.Id"
+                                         data-quantity="@orderedProduct.Quantity">
                                         <img src="@orderedProduct.Product.ImagePath" alt="" class="order-item-img">
                                         <div>
                                             <h4>@orderedProduct.Product.Name</h4>
                                             <p>Quantity: @orderedProduct.Quantity</p>
-                                            <p>$@($"{orderedProduct.Product.Price:f2}")@(orderedProduct.Quantity>1?" each":"")</p>
+                                            <p>
+                                                $@($"{orderedProduct.Product.Price:f2}")@(orderedProduct.Quantity > 1 ? " each" : "")</p>
                                         </div>
                                     </div>
                                 }
@@ -288,15 +299,15 @@
                             <div class="order-summary">
                                 <div class="summary-row">
                                     <span>Subtotal:</span>
-                                    <span>$@($"{((double)total * 0.8):f2}")</span>
+                                    <span>$@($"{(double)total * 0.8:f2}")</span>
                                 </div>
                                 <div class="summary-row">
                                     <span>Shipping:</span>
-                                    <span>$@(total <= 100 ? "10.00":"Free")</span>
+                                    <span>$@(total <= 100 ? "10.00" : "Free")</span>
                                 </div>
                                 <div class="summary-row">
                                     <span>Tax:</span>
-                                    <span>$@($"{((double)total * 0.2):f2}")</span>
+                                    <span>$@($"{(double)total * 0.2:f2}")</span>
                                 </div>
                                 <div class="summary-row" style="font-weight: bold; font-size: 1.1em;">
                                     <span>Total:</span>
@@ -305,16 +316,21 @@
                             </div>
                         </div>
                         @{
-                            string isVisibleForNotCanceled = status == Status.Canceled ? "d-none" : "";
+                            var isVisibleForNotCanceled = status == Status.Canceled ? "d-none" : "";
                         }
                         <div class="order-actions">
                             @if (!item.OrderedProducts.Any(op => op.Quantity > op.Product.Quantity || op.Product.Status != ProductStatus.InStock))
                             {
                                 <button name="reorder-btn" class="btn btn-primary">Reorder</button>
                             }
-                            <a asp-action="Create" asp-controller="Feedbacks" class="btn btn-secondary @isVisibleForNotCanceled">Leave Review</a>
-                            <button name="cancel-btn" class="btn btn-secondary @(status != Status.InProgress && status != Status.Confirmed ? "d-none" : "")">Cancel Order</button>
-                            <a href="mailto:support@giftshob.bg" class="btn btn-secondary @isVisibleForNotCanceled">Contact Support</a>
+                            <a asp-action="Create" asp-controller="Feedbacks"
+                               class="btn btn-secondary @isVisibleForNotCanceled">Leave Review</a>
+                            <button name="cancel-btn"
+                                    class="btn btn-secondary @(status != Status.InProgress && status != Status.Confirmed ? "d-none" : "")">
+                                Cancel Order
+                            </button>
+                            <a href="mailto:support@giftshob.bg" class="btn btn-secondary @isVisibleForNotCanceled">Contact
+                                Support</a>
                         </div>
                     </div>
                 }
@@ -324,48 +340,51 @@
                 <div class="no-orders">
                     <i class="fas fa-box-open"></i>
                     <h3>No orders found</h3>
-                    <p>You haven't placed any orders @(Model.Data.SelectedStatus != null ? "with this status" : "yet")</p>
+                    <p>You haven't placed any
+                        orders @(Model.Data.SelectedStatus != null ? "with this status" : "yet")</p>
                     <a href="/Shop" class="btn btn-primary" style="margin-top: 20px;">Start Shopping</a>
                 </div>
             }
 
             <!-- Pagination -->
-                 @if (Model.TotalPages > 1)
-                            {
-                                <div class="pagination" style="display: flex; justify-content: center; margin-top: 30px; gap: 10px;">
-                                    @if (Model.CurrentPage > 1)
-                                    {
-                                        <a href="?index=@(Model.CurrentPage - 1)&status=@Model.Data.SelectedStatus" class="btn btn-secondary">
-                                            <i style="margin-right: 0.5rem" class="fas fa-chevron-left"></i> Previous
-                                        </a>
-                                    }
+            @if (Model.TotalPages > 1)
+            {
+                <div class="pagination" style="display: flex; justify-content: center; margin-top: 30px; gap: 10px;">
+                    @if (Model.CurrentPage > 1)
+                    {
+                        <a href="?index=@(Model.CurrentPage - 1)&status=@Model.Data.SelectedStatus"
+                           class="btn btn-secondary">
+                            <i style="margin-right: 0.5rem" class="fas fa-chevron-left"></i> Previous
+                        </a>
+                    }
 
-                                    @for (int i = 1; i <= Model.TotalPages; i++)
-                                    {
-                                        <a href="?index=@i&status=@Model.Data.SelectedStatus"
-                                           class="btn @(i == Model.CurrentPage ? "btn-primary" : "btn-secondary")">@i</a>
-                                    }
+                    @for (var i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <a href="?index=@i&status=@Model.Data.SelectedStatus"
+                           class="btn @(i == Model.CurrentPage ? "btn-primary" : "btn-secondary")">@i</a>
+                    }
 
-                                    @if (Model.CurrentPage < Model.TotalPages)
-                                    {
-                                        <a href="?index=@(Model.CurrentPage + 1)&status=@Model.Data.SelectedStatus" class="btn btn-secondary">
-                                            Next <i style="margin-left: 0.5rem" class="fas fa-chevron-right"></i>
-                                        </a>
-                                    }
-                                </div>
-                            }
-            
+                    @if (Model.CurrentPage < Model.TotalPages)
+                    {
+                        <a href="?index=@(Model.CurrentPage + 1)&status=@Model.Data.SelectedStatus"
+                           class="btn btn-secondary">
+                            Next <i style="margin-left: 0.5rem" class="fas fa-chevron-right"></i>
+                        </a>
+                    }
+                </div>
+            }
+
         </main>
     </div>
 </div>
 
 <script src="~/js/order.js">
-    
+
 </script>
 
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"/>
 }
 </body>
 </html>

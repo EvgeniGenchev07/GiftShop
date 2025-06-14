@@ -1,7 +1,3 @@
-
-
-
-
 /* Header Styles */
 
 
@@ -19,7 +15,7 @@
     background: white;
     margin-top: 2.5rem;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
@@ -63,7 +59,7 @@
     min-width: 300px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
 
@@ -94,7 +90,7 @@
 }
 
 .order-card:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .order-header {
@@ -133,6 +129,7 @@
     background-color: #f8d7da;
     color: #721c24;
 }
+
 .status-delivered {
     background-color: #d4edda;
     color: #155724;
@@ -259,19 +256,17 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-.account-dashboard
+    .account-dashboard {
+        flex-direction: column;
+    }
 
-{
-    flex-direction: column;
-}
+    .account-sidebar {
+        flex: 1;
+    }
 
-.account-sidebar {
-    flex: 1;
-}
-
-.order-header {
-    flex-direction: column;
-    gap: 10px;
-}
+    .order-header {
+        flex-direction: column;
+        gap: 10px;
+    }
 
 }

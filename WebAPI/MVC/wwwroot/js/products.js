@@ -11,11 +11,10 @@
             const basket = sessionStorage.getItem("basket");
             if (basket) {
                 const object = JSON.parse(basket);
-                object.push({ id: productId, quantity: 1 });
+                object.push({id: productId, quantity: 1});
                 sessionStorage.setItem("basket", JSON.stringify(object));
-            }
-            else {
-                const object = [{ id: productId, quantity: 1 }];
+            } else {
+                const object = [{id: productId, quantity: 1}];
                 sessionStorage.setItem("basket", JSON.stringify(object));
             }
         }
@@ -30,8 +29,7 @@ document.addEventListener('click', function (e) {
         if (parseInt(input.value) > 1) {
             input.value = parseInt(input.value) - 1;
             updateBasketQuantity(e.target.closest('.product-card'));
-        }
-        else {
+        } else {
             const card = e.target.closest('.product-card');
             const productId = card.getAttribute('data-id');
             const data = sessionStorage.getItem("basket");
@@ -68,7 +66,7 @@ function updateBasketQuantity(productCard) {
     const productIndex = object.findIndex(p => p.id == productId);
 
     if (productIndex === -1) {
-        object.push({ id: productId, quantity: quantity });
+        object.push({id: productId, quantity: quantity});
     } else {
         object[productIndex].quantity = quantity;
     }

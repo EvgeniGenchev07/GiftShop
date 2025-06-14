@@ -5,12 +5,6 @@ namespace BusinessLayer;
 
 public class OrderedProduct
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; set; }
-    public int Quantity { get; set; }
-    public Product Product { get; set; }
-
     public OrderedProduct()
     {
     }
@@ -20,4 +14,11 @@ public class OrderedProduct
         Quantity = quantity;
         Product = product;
     }
+
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id { get; set; }
+
+    public int Quantity { get; set; }
+    public Product Product { get; set; }
 }

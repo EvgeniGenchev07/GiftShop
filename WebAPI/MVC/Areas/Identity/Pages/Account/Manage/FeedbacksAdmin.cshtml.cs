@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 [Authorize(Roles = "Administrator")]
 public class FeedbacksAdminModel : PageModel
 {
-    private readonly IDb<Feedback,int> _feedbackContext;
+    private readonly IDb<Feedback, int> _feedbackContext;
 
     public FeedbacksAdminModel(FeedbackContext feedbackContext)
     {
@@ -18,7 +18,7 @@ public class FeedbacksAdminModel : PageModel
 
     public async Task OnGetAsync()
     {
-        Feedbacks = await _feedbackContext.ReadAll(true,true);
+        Feedbacks = await _feedbackContext.ReadAll(true, true);
     }
 
     public async Task<IActionResult> OnPostDeleteReviewAsync(int id)

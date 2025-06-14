@@ -4,13 +4,13 @@
     ViewData["Title"] = "Edit Product";
 }
 <head>
-   
+
     <style>
         .card {
             border-radius: 0.5rem;
             overflow: hidden;
         }
-        
+
         .form-floating label {
             color: #6c757d;
         }
@@ -25,14 +25,15 @@
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         }
 
-        .btn-primary{
+        .btn-primary {
             background-color: #e63946 !important;
             color: white !important;
         }
+
         .card-header {
             background-color: #e63946 !important;
         }
-        
+
     </style>
 </head>
 <div class="container py-5">
@@ -47,12 +48,12 @@
                 <div class="card-body">
                     <form asp-action="Edit" enctype="multipart/form-data" class="needs-validation" novalidate>
                         <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
-                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="Id"/>
 
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input asp-for="Name" class="form-control" placeholder=" " required />
+                                    <input asp-for="Name" class="form-control" placeholder=" " required/>
                                     <label asp-for="Name" class="form-label"></label>
                                     <span asp-validation-for="Name" class="text-danger small"></span>
                                 </div>
@@ -60,7 +61,7 @@
 
                             <div class="col-md-3">
                                 <div class="form-floating mb-3">
-                                    <input asp-for="Price" class="form-control" placeholder=" " required />
+                                    <input asp-for="Price" class="form-control" placeholder=" " required/>
                                     <label asp-for="Price" class="form-label"></label>
                                     <span asp-validation-for="Price" class="text-danger small"></span>
                                 </div>
@@ -68,7 +69,7 @@
 
                             <div class="col-md-3">
                                 <div class="form-floating mb-3">
-                                    <input asp-for="Quantity" class="form-control" placeholder=" " required />
+                                    <input asp-for="Quantity" class="form-control" placeholder=" " required/>
                                     <label asp-for="Quantity" class="form-label"></label>
                                     <span asp-validation-for="Quantity" class="text-danger small"></span>
                                 </div>
@@ -77,23 +78,27 @@
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="productImage" class="form-label">Product Image</label>
-                                    <input type="file" class="form-control" id="productImage" name="photo" accept="image/*">
+                                    <input type="file" class="form-control" id="productImage" name="photo"
+                                           accept="image/*">
                                     @if (!string.IsNullOrEmpty(Model.ImagePath))
                                     {
                                         <div class="mt-2">
                                             <span class="text-muted small">Current Image:</span>
-                                            <img src="@Model.ImagePath" class="img-thumbnail mt-2" style="max-height: 150px;" alt="Current product image">
+                                            <img src="@Model.ImagePath" class="img-thumbnail mt-2"
+                                                 style="max-height: 150px;" alt="Current product image">
                                         </div>
                                     }
                                     <div class="mt-3 text-center">
-                                        <img id="imagePreview" class="img-thumbnail d-none" style="max-height: 200px;" alt="Product preview">
+                                        <img id="imagePreview" class="img-thumbnail d-none" style="max-height: 200px;"
+                                             alt="Product preview">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-12">
                                 <div class="d-grid gap-2 d-md-flex justify-content-between">
-                                    <a asp-area="Identity" asp-page="/Account/Manage/ProductsAdmin" class="btn btn-primary me-md-2">
+                                    <a asp-area="Identity" asp-page="/Account/Manage/ProductsAdmin"
+                                       class="btn btn-primary me-md-2">
                                         <i class="fas fa-arrow-left me-1"></i> Go Back
                                     </a>
                                     <button type="submit" class="btn btn-primary">
@@ -110,17 +115,17 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
     <script>
         // Image preview functionality
-        document.getElementById('productImage').addEventListener('change', function(event) {
+        document.getElementById('productImage').addEventListener('change', function (event) {
             const file = event.target.files[0];
             const preview = document.getElementById('imagePreview');
-            
+
             if (file) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     preview.src = e.target.result;
                     preview.classList.remove('d-none');
                 }
@@ -135,7 +140,7 @@
         (function () {
             'use strict'
             const forms = document.querySelectorAll('.needs-validation')
-            
+
             Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
                     if (!form.checkValidity()) {

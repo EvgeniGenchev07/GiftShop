@@ -17,7 +17,7 @@
         max-width: 400px;
         background: white;
         border-radius: 16px 16px 0 0;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         overflow: hidden;
         margin: 0 auto;
     }
@@ -48,7 +48,7 @@
         position: absolute;
         bottom: 0;
         margin-bottom: 10px;
-        
+
         left: 0;
         height: 3px;
         width: 50%;
@@ -66,7 +66,7 @@
     .form-card {
         background: white;
         border-radius: 0 0 16px 16px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         padding: 2rem;
         margin: 0 auto;
         max-width: 400px;
@@ -103,7 +103,8 @@
                     <div class="auth-container">
                         <div class="auth-tabs">
                             <a asp-area="Identity" asp-page="/Account/Login" class="auth-tab" data-tab="login">Login</a>
-                            <a asp-area="Identity" asp-page="/Account/Register" class="auth-tab active" data-tab="signup">Sign Up</a>
+                            <a asp-area="Identity" asp-page="/Account/Register" class="auth-tab active"
+                               data-tab="signup">Sign Up</a>
                             <div class="indicator"></div>
                         </div>
                     </div>
@@ -116,33 +117,41 @@
                                     <div class="center-wrap">
                                         <div class="section text-center">
                                             <form id="account" method="post">
-                                            <h4 class="mb-4 pb-3">Sign Up</h4>
-                                            <div class="form-group">
-                                                <input asp-for="Input.Username" class="form-style"  placeholder="Your Name"/>
-                                                <span asp-validation-for="Input.Username" class="text-danger"></span>
-                                                <i class="input-icon uil uil-user"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input asp-for="Input.Email" class="form-style" placeholder="Email"/>
-                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
-                                                <i class="input-icon uil uil-at"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input asp-for="Input.Password" class="form-style" placeholder="Password"/>
-                                                <span asp-validation-for="Input.Password" class="text-danger"></span>
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input asp-for="Input.ConfirmPassword" class="form-style" placeholder="Confirm Password"/>
-                                                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary mt-4">Submit</button>
-                                        </form>
+                                                <h4 class="mb-4 pb-3">Sign Up</h4>
+                                                <div class="form-group">
+                                                    <input asp-for="Input.Username" class="form-style"
+                                                           placeholder="Your Name"/>
+                                                    <span asp-validation-for="Input.Username"
+                                                          class="text-danger"></span>
+                                                    <i class="input-icon uil uil-user"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input asp-for="Input.Email" class="form-style"
+                                                           placeholder="Email"/>
+                                                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input asp-for="Input.Password" class="form-style"
+                                                           placeholder="Password"/>
+                                                    <span asp-validation-for="Input.Password"
+                                                          class="text-danger"></span>
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input asp-for="Input.ConfirmPassword" class="form-style"
+                                                           placeholder="Confirm Password"/>
+                                                    <span asp-validation-for="Input.ConfirmPassword"
+                                                          class="text-danger"></span>
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,10 +159,9 @@
         </div>
     </div>
 </div>
-</div>
 
 
-    
+
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"/>
 }

@@ -1,90 +1,91 @@
 ﻿@page
 @model AccountDetailsModel
 @{
-ViewData["Title"] = "Account Details";
-ViewData["ActivePage"] = ManageNavPages.AccountDetails;
+    ViewData["Title"] = "Account Details";
+    ViewData["ActivePage"] = ManageNavPages.AccountDetails;
 }
 <head>
     <style>
-    .details-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        margin-bottom: 30px;
-    }
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
 
-    .detail-item {
-        margin-bottom: 15px;
-    }
+        .detail-item {
+            margin-bottom: 15px;
+        }
 
-    .detail-item label {
-        display: block;
-        font-weight: 600;
-        color: #6c757d;
-        margin-bottom: 5px;
-    }
+        .detail-item label {
+            display: block;
+            font-weight: 600;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
 
-    .detail-value {
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-        min-height: 38px; /* Match form control height */
-    }
+        .detail-value {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            min-height: 38px; /* Match form control height */
+        }
 
-    .form-actions {
-        display: flex;
-        gap: 10px;
-        justify-content: flex-end;
-        margin-top: 30px;
-    }
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
 
-    /* View mode specific */
-    form.view-mode .form-control,
-    form.view-mode .form-actions {
-        display: none;
-    }
+        /* View mode specific */
+        form.view-mode .form-control,
+        form.view-mode .form-actions {
+            display: none;
+        }
 
-    /* Edit mode specific */
-    form:not(.view-mode) .detail-value {
-        display: none;
-    }
+        /* Edit mode specific */
+        form:not(.view-mode) .detail-value {
+            display: none;
+        }
 
-    /* Existing account styles */
-    .account-content {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        padding: 30px;
-    }
+        /* Existing account styles */
+        .account-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
 
-    .account-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-    }
+        .account-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
 
-    .account-header h2 {
-        color: #e63946;
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
+        .account-header h2 {
+            color: #e63946;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
 
-    .btn-primary {
-        background-color: #e63946;
-        border-color: #e63946;
-    }
+        .btn-primary {
+            background-color: #e63946;
+            border-color: #e63946;
+        }
 
-    .btn-primary:hover {
-        background-color: #c1121f;
-        border-color: #c1121f;
-    }
-    i{
-        margin-right: 0.5rem;
-    }
-</style>
+        .btn-primary:hover {
+            background-color: #c1121f;
+            border-color: #c1121f;
+        }
+
+        i {
+            margin-right: 0.5rem;
+        }
+    </style>
 </head>
 <div class="container">
     <div class="account-dashboard">
@@ -96,20 +97,21 @@ ViewData["ActivePage"] = ManageNavPages.AccountDetails;
                 </h2>
                 @if (!Model.IsEditing)
                 {
-                <button id="edit-button" class="btn btn-primary">
-                    <i class="fas fa-edit mr-2"></i> Edit Profile
-                </button>
+                    <button id="edit-button" class="btn btn-primary">
+                        <i class="fas fa-edit mr-2"></i> Edit Profile
+                    </button>
                 }
             </div>
 
             @if (!string.IsNullOrEmpty(Model.StatusMessage))
             {
-            <div class="alert @(Model.StatusMessage.Contains("success") ? "alert-success" : "alert-danger")">
-                @Model.StatusMessage
-            </div>
+                <div class="alert @(Model.StatusMessage.Contains("success") ? "alert-success" : "alert-danger")">
+                    @Model.StatusMessage
+                </div>
             }
 
-            <form id="account-form" method="post" enctype="multipart/form-data" class="@(Model.IsEditing ? "" : "view-mode")">
+            <form id="account-form" method="post" enctype="multipart/form-data"
+                  class="@(Model.IsEditing ? "" : "view-mode")">
                 <!-- Account Details -->
                 <div class="details-grid">
                     <!-- Full Name -->
@@ -117,12 +119,12 @@ ViewData["ActivePage"] = ManageNavPages.AccountDetails;
                         <label>Full Name</label>
                         @if (Model.IsEditing)
                         {
-                        <input placeholder="Name" asp-for="Input.FullName" class="form-control">
-                        <span asp-validation-for="Input.FullName" class="text-danger"></span>
+                            <input placeholder="Name" asp-for="Input.FullName" class="form-control">
+                            <span asp-validation-for="Input.FullName" class="text-danger"></span>
                         }
                         else
                         {
-                        <div class="detail-value">@Model.Input.FullName</div>
+                            <div class="detail-value">@Model.Input.FullName</div>
                         }
                     </div>
 
@@ -131,12 +133,12 @@ ViewData["ActivePage"] = ManageNavPages.AccountDetails;
                         <label>Email</label>
                         @if (Model.IsEditing)
                         {
-                        <input placeholder="Email" asp-for="Input.Email" class="form-control">
-                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            <input placeholder="Email" asp-for="Input.Email" class="form-control">
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
                         }
                         else
                         {
-                        <div class="detail-value">@Model.Input.Email</div>
+                            <div class="detail-value">@Model.Input.Email</div>
                         }
                     </div>
 
@@ -145,12 +147,12 @@ ViewData["ActivePage"] = ManageNavPages.AccountDetails;
                         <label>Phone Number</label>
                         @if (Model.IsEditing)
                         {
-                        <input placeholder="Phone Number" asp-for="Input.PhoneNumber" class="form-control">
-                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                            <input placeholder="Phone Number" asp-for="Input.PhoneNumber" class="form-control">
+                            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
                         }
                         else
                         {
-                        <div class="detail-value">@(Model.Input.PhoneNumber ?? "Not set")</div>
+                            <div class="detail-value">@(Model.Input.PhoneNumber ?? "Not set")</div>
                         }
                     </div>
 
@@ -159,26 +161,27 @@ ViewData["ActivePage"] = ManageNavPages.AccountDetails;
                         <label>Address</label>
                         @if (Model.IsEditing)
                         {
-                        <textarea placeholder="Your Address" asp-for="Input.Address" class="form-control" rows="3"></textarea>
-                        <span asp-validation-for="Input.Address" class="text-danger"></span>
+                            <textarea placeholder="Your Address" asp-for="Input.Address" class="form-control"
+                                      rows="3"></textarea>
+                            <span asp-validation-for="Input.Address" class="text-danger"></span>
                         }
                         else
                         {
-                        <div class="detail-value">@(Model.Input.Address ?? "Not set")</div>
+                            <div class="detail-value">@(Model.Input.Address ?? "Not set")</div>
                         }
                     </div>
                 </div>
 
                 @if (Model.IsEditing)
                 {
-                <div class="form-actions justify-content-between">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-save mr-2"></i> Save Changes
-                    </button>
-                    <a asp-page="./AccountDetails" class="btn btn-outline-secondary">
-                        <i class="fas fa-times mr-2"></i> Cancel
-                    </a>
-                </div>
+                    <div class="form-actions justify-content-between">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save mr-2"></i> Save Changes
+                        </button>
+                        <a asp-page="./AccountDetails" class="btn btn-outline-secondary">
+                            <i class="fas fa-times mr-2"></i> Cancel
+                        </a>
+                    </div>
                 }
             </form>
         </main>
@@ -187,10 +190,10 @@ ViewData["ActivePage"] = ManageNavPages.AccountDetails;
 
 
 @section Scripts {
-<partial name="_ValidationScriptsPartial" />
-<script>
-    document.getElementById('edit-button')?.addEventListener('click', function() {
-        window.location.href = '?handler=edit';
-    });
-</script>
+    <partial name="_ValidationScriptsPartial"/>
+    <script>
+        document.getElementById('edit-button')?.addEventListener('click', function () {
+            window.location.href = '?handler=edit';
+        });
+    </script>
 }

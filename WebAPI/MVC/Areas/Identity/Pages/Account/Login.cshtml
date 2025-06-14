@@ -18,7 +18,7 @@
         max-width: 400px;
         background: white;
         border-radius: 16px 16px 0 0;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         overflow: hidden;
         margin: 0 auto;
     }
@@ -65,7 +65,7 @@
     .form-card {
         background: white;
         border-radius: 0 0 16px 16px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         padding: 2rem;
         margin: 0 auto;
         max-width: 400px;
@@ -102,7 +102,8 @@
                     <div class="auth-container">
                         <div class="auth-tabs">
                             <a asp-area="Identity" asp-page="/Account/Login" class="auth-tab active" data-tab="login">Login</a>
-                            <a asp-area="Identity" asp-page="/Account/Register" class="auth-tab" data-tab="signup">Sign Up</a>
+                            <a asp-area="Identity" asp-page="/Account/Register" class="auth-tab" data-tab="signup">Sign
+                                Up</a>
                             <div class="indicator"></div>
                         </div>
                     </div>
@@ -118,16 +119,21 @@
                                             <form id="account" method="post">
                                                 <h4 class="mb-4 pb-3">Log In</h4>
                                                 <div class="form-group">
-                                                    <input asp-for="Input.Email" class="form-style" placeholder="Email"/>
+                                                    <input asp-for="Input.Email" class="form-style"
+                                                           placeholder="Email"/>
                                                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                                                     <i class="input-icon uil uil-at"></i>
                                                 </div>
                                                 <div class="form-group mt-2">
-                                                    <input asp-for="Input.Password" class="form-style" placeholder="Password"/>
-                                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                                    <input asp-for="Input.Password" class="form-style"
+                                                           placeholder="Password"/>
+                                                    <span asp-validation-for="Input.Password"
+                                                          class="text-danger"></span>
                                                     <i class="input-icon uil uil-lock-alt"></i>
                                                 </div>
-                                                <p class="mb-0 mt-4 text-end"><a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a></p>
+                                                <p class="mb-0 mt-4 text-end"><a id="forgot-password"
+                                                                                 asp-page="./ForgotPassword">Forgot your
+                                                        password?</a></p>
                                                 <button type="submit" class="btn btn-primary mt-4">Submit</button>
                                             </form>
                                         </div>
@@ -143,5 +149,5 @@
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"/>
 }

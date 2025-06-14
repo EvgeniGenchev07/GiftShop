@@ -88,7 +88,7 @@
         margin-bottom: 45px;
     }
 
-    .info_section .row>div {
+    .info_section .row > div {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -118,9 +118,11 @@
     }
 }
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+}
 
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+}
 
 @media (min-width: 1200px) {
     .container {
