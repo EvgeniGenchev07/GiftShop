@@ -37,7 +37,7 @@ namespace DataLayer
                 {
                     await _userManager.AddToRoleAsync(user, Role.Administrator.ToString());
                 }
-                else
+                else if (role == Role.User)
                 {
                     await _userManager.AddToRoleAsync(user, Role.User.ToString());
                 }

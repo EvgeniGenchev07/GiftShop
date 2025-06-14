@@ -6,10 +6,7 @@
 }
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="~/css/bascket.css">
-    
-       
 </head>
 <body>
 <div class="d-flex justify-content-center" id="loader">
@@ -128,13 +125,11 @@
                 const stringObject = JSON.stringify(data);
                 document.getElementById("productsString").value = stringObject;
                 if(data.length>0) document.getElementById("submitButton").disabled = false;
-
                 for(let i = 0; i < data.length; ++i){
                     document.getElementById("container").insertAdjacentHTML("beforeend",
                         model(JSON.stringify(data[i]), data[i].product.name,data[i].product.imagePath, data[i].quantity, data[i].product.price, data[i].product.quantity));
                 }
                 document.getElementById("loader").classList.add("inactive");
-                console.log(document.getElementById("loader").classList.contains("inactive"));
                 document.getElementById("product-page").classList.remove("inactive");
                 // Quantity controls
                 document.querySelectorAll('.qty-btn').forEach(button => {
@@ -153,7 +148,7 @@
                                 removeItem(this);
                             }
                             basket_span.innerHTML = parseInt(basket_span.innerHTML) - 1;
-                        } else if (this.textContent === '+' && value <= max) {
+                        } else if (this.textContent === '+' && value < max) {
                             input.value = value + 1;
                             basket_span.innerHTML = parseInt(basket_span.innerHTML) + 1;
                         }
@@ -251,6 +246,10 @@
             .catch(error => {
                 console.error("Fetch error:", error);
             });
+    }
+    else{
+        document.getElementById("loader").classList.add("inactive");
+        document.getElementById("product-page").classList.remove("inactive");
     }
 </script>
 </body>

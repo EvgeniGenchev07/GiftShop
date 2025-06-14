@@ -49,7 +49,7 @@ document.addEventListener('click', function (e) {
 
     if (e.target.classList.contains('plus-btn')) {
         const input = e.target.previousElementSibling;
-        if (parseInt(input.value) <= input.max) {
+        if (parseInt(input.value) < input.max) {
             input.value = parseInt(input.value) + 1;
             basket_span.innerHTML = parseInt(basket_span.innerHTML) + 1;
             updateBasketQuantity(e.target.closest('.product-card'));

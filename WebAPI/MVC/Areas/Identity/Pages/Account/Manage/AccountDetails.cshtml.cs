@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 using BusinessLayer;
 
-namespace MVC.Areas.Identity.Pages.Account.Manage
-{
     public class AccountDetailsModel : PageModel
     {
         private readonly UserManager<User> _userManager;
@@ -111,4 +104,3 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
             };
         }
     }
-}

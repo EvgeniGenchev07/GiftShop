@@ -1,18 +1,27 @@
-﻿@inject SignInManager<User> SignInManager
-@{
-    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
-}
-<ul class="nav nav-pills flex-column">
+﻿<ul class="nav nav-pills flex-column">
     <aside class="account-sidebar">
         <h3>My Account</h3>
         <ul class="account-menu">
+            @if (User.IsInRole(Role.User.ToString()))
+            {
+                
             <li><a asp-page="./Index" id="profile" as="./Index" class="@ManageNavPages.IndexNavClass(ViewContext)"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
             <li><a class="@ManageNavPages.OrdersNavClass(ViewContext)" asp-page="./Orders"><i class="fas fa-box-open"></i>Orders</a></li>
             <li><a class="@ManageNavPages.FeedbacksNavClass(ViewContext)" asp-page="./Feedbacks"><i class="fas fa-comment"></i>Reviews</a></li>
-            <li><a class="@ManageNavPages.AccountDetailsNavClass(ViewContext)" id="account-details"  asp-page="./AccountDetails"><i class="fas fa-user"></i>Account Details</a></li>
-            <li><a class="@ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword" ><i class="fas fa-key"></i>Change password</a></li>
+            <li><a class="@ManageNavPages.AccountDetailsNavClass(ViewContext)" id="account-details" asp-page="./AccountDetails"><i class="fas fa-user"></i>Account Details</a></li>
+            <li><a class="@ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword"><i class="fas fa-key"></i>Change password</a></li>
             <li><a class="@ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData"><i class="fas fa-user-circle"></i>Personal Data</a></li>
-            <li><a asp-page="../Logout" ><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+            }
+            else if (User.IsInRole(Role.Administrator.ToString()))
+            {
+                <li><a asp-page="./ProductsAdmin" id="products-admin" class="@ManageNavPages.ProductsAdminNavClass(ViewContext)"><i class="fas fa-tachometer-alt"></i>Products</a></li>
+                <li><a class="@ManageNavPages.OrdersAdminNavClass(ViewContext)" id="orders-admin" asp-page="./OrdersAdmin"><i class="fas fa-box-open"></i>Orders</a></li>
+                <li><a class="@ManageNavPages.FeedbacksNavClass(ViewContext)" id="feedbacks-admin" asp-page="./FeedbacksAdmin"><i class="fas fa-comment"></i>Reviews</a></li>
+                <li><a class="@ManageNavPages.AccountDetailsNavClass(ViewContext)" id="account-details" asp-page="./AccountDetails"><i class="fas fa-user"></i>Account Details</a></li>
+                <li><a class="@ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword"><i class="fas fa-key"></i>Change password</a></li>
+            } 
+            
+            <li><a asp-page="../Logout"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
         </ul>
     </aside>
 </ul>

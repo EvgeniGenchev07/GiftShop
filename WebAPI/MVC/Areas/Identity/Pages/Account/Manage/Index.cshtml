@@ -203,8 +203,11 @@
                             string isVisibleForNotCanceled = status == Status.Canceled ? "d-none" : "";
                         }
                         <div class="order-actions">
+                        @if (!item.OrderedProducts.Any(op => op.Quantity > op.Product.Quantity || op.Product.Status != ProductStatus.InStock))
+                        {
                             <button name="reorder-btn" class="btn btn-primary">Reorder</button>
-                            <a asp-action="Create" asp-controller="Feedbacks" class="btn btn-secondary @isVisibleForNotCanceled">Leave Review</a>
+                        }
+                        <a asp-action="Create" asp-controller="Feedbacks" class="btn btn-secondary @isVisibleForNotCanceled">Leave Review</a>
                             <button name="cancel-btn" class="btn btn-secondary @(status != Status.InProgress && status != Status.Confirmed ? "d-none" : "")">Cancel Order</button>
                             <a href="mailto:support@giftshob.bg" class="btn btn-secondary @isVisibleForNotCanceled">Contact Support</a>
                         </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p4IbE613kRetkBqPPZHFNO81+dj0G6H08TeoyrwjUPk=",
+  "Hash": "xw9m6ii5QUF54lcpLSF5Y+GFZjpjRoctDL6abyX7GN0=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tyxfs2ec86",
-      "Integrity": "tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=",
+      "Fingerprint": "s84ajanp9e",
+      "Integrity": "/D6Yq06Iy48TpE0fJEhRzBoz0TWcEPo1aAqB/t/V/Fw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bascket.css"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6ow429cg0y",
-      "Integrity": "mrtoPSGRoEP+NRjG03asnP/aajMPn+4di6eTQgUuUvY=",
+      "Fingerprint": "ph6003hxcg",
+      "Integrity": "3VwSQHAGbO8Udi9Y+Si8TPwYE5R1SRbToSGdBOwCDrU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/style.css"
@@ -309,6 +309,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/agency-img.jpg"
+    },
+    {
+      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Bracelet.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
+      "BasePath": "_content/MVC",
+      "RelativePath": "images/Bracelet#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b9nwpoyd7x",
+      "Integrity": "v7brffVv2Is9PY2AWqBjQloj37Ki3kOtaVIoUDozGqs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Bracelet.png"
+    },
+    {
+      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
+      "BasePath": "_content/MVC",
+      "RelativePath": "images/Code#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aimh8s6597",
+      "Integrity": "MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Code.png"
+    },
+    {
+      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code2.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
+      "BasePath": "_content/MVC",
+      "RelativePath": "images/Code2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aimh8s6597",
+      "Integrity": "MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Code2.png"
     },
     {
       "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Console.png",
@@ -829,32 +892,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "po6ec435ir",
-      "Integrity": "p1o1RWHTxFuyx9DQ1Z95+Ws6SMNnTVdjSdXYkOinJnk=",
+      "Fingerprint": "ycz0wc5l7o",
+      "Integrity": "AhOSD6sndC0Pd8Nyaed8V13BiThICK7QYpdETekKUjc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/products.js"
-    },
-    {
-      "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/site.js",
-      "SourceId": "MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/",
-      "BasePath": "_content/MVC",
-      "RelativePath": "js/site#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fr7q2aak1r",
-      "Integrity": "y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
       "Identity": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
@@ -2148,7 +2190,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4442"
+          "Value": "4444"
         },
         {
           "Name": "Content-Type",
@@ -2156,11 +2198,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=\""
+          "Value": "\"/D6Yq06Iy48TpE0fJEhRzBoz0TWcEPo1aAqB/t/V/Fw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
+          "Value": "Sat, 14 Jun 2025 12:22:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2170,12 +2212,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA="
+          "Value": "sha256-/D6Yq06Iy48TpE0fJEhRzBoz0TWcEPo1aAqB/t/V/Fw="
         }
       ]
     },
     {
-      "Route": "css/bascket.tyxfs2ec86.css",
+      "Route": "css/bascket.s84ajanp9e.css",
       "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/bascket.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2185,7 +2227,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4442"
+          "Value": "4444"
         },
         {
           "Name": "Content-Type",
@@ -2193,11 +2235,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA=\""
+          "Value": "\"/D6Yq06Iy48TpE0fJEhRzBoz0TWcEPo1aAqB/t/V/Fw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
+          "Value": "Sat, 14 Jun 2025 12:22:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2207,7 +2249,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tyxfs2ec86"
+          "Value": "s84ajanp9e"
         },
         {
           "Name": "label",
@@ -2215,7 +2257,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tR0cYK/CdkgSQvHPLRrbqmtVeVKkmrku2+uYeXpcooA="
+          "Value": "sha256-/D6Yq06Iy48TpE0fJEhRzBoz0TWcEPo1aAqB/t/V/Fw="
         }
       ]
     },
@@ -2466,51 +2508,6 @@
       ]
     },
     {
-      "Route": "css/style.6ow429cg0y.css",
-      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22616"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mrtoPSGRoEP+NRjG03asnP/aajMPn+4di6eTQgUuUvY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6ow429cg0y"
-        },
-        {
-          "Name": "label",
-          "Value": "css/style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mrtoPSGRoEP+NRjG03asnP/aajMPn+4di6eTQgUuUvY="
-        }
-      ]
-    },
-    {
       "Route": "css/style.css",
       "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/style.css",
       "Selectors": [],
@@ -2521,7 +2518,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22616"
+          "Value": "22717"
         },
         {
           "Name": "Content-Type",
@@ -2529,11 +2526,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mrtoPSGRoEP+NRjG03asnP/aajMPn+4di6eTQgUuUvY=\""
+          "Value": "\"3VwSQHAGbO8Udi9Y+Si8TPwYE5R1SRbToSGdBOwCDrU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
+          "Value": "Sat, 14 Jun 2025 12:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2543,7 +2540,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mrtoPSGRoEP+NRjG03asnP/aajMPn+4di6eTQgUuUvY="
+          "Value": "sha256-3VwSQHAGbO8Udi9Y+Si8TPwYE5R1SRbToSGdBOwCDrU="
         }
       ]
     },
@@ -2626,6 +2623,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-bVcEHxArDgAoZz7epkEJYL2D5hdveu4t/x+A1UnBNo4="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.ph6003hxcg.css",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/css/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22717"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3VwSQHAGbO8Udi9Y+Si8TPwYE5R1SRbToSGdBOwCDrU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 12:24:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ph6003hxcg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3VwSQHAGbO8Udi9Y+Si8TPwYE5R1SRbToSGdBOwCDrU="
         }
       ]
     },
@@ -3036,6 +3078,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-+LS08PT/iUtfBwsb8rDFLVcS4dDBawoCXy06HHXl2tc="
+        }
+      ]
+    },
+    {
+      "Route": "images/Bracelet.b9nwpoyd7x.png",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Bracelet.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7brffVv2Is9PY2AWqBjQloj37Ki3kOtaVIoUDozGqs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 12:12:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b9nwpoyd7x"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Bracelet.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v7brffVv2Is9PY2AWqBjQloj37Ki3kOtaVIoUDozGqs="
+        }
+      ]
+    },
+    {
+      "Route": "images/Bracelet.png",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Bracelet.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7brffVv2Is9PY2AWqBjQloj37Ki3kOtaVIoUDozGqs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 12:12:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v7brffVv2Is9PY2AWqBjQloj37Ki3kOtaVIoUDozGqs="
+        }
+      ]
+    },
+    {
+      "Route": "images/Code.aimh8s6597.png",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:44:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aimh8s6597"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Code.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8="
+        }
+      ]
+    },
+    {
+      "Route": "images/Code.png",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:44:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8="
+        }
+      ]
+    },
+    {
+      "Route": "images/Code2.aimh8s6597.png",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:53:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aimh8s6597"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Code2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8="
+        }
+      ]
+    },
+    {
+      "Route": "images/Code2.png",
+      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:53:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MiQae7gaLsMyOPTJiN6jvmlbGt7tIBogXmA9SBUWqJ8="
         }
       ]
     },
@@ -5026,11 +5314,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p1o1RWHTxFuyx9DQ1Z95+Ws6SMNnTVdjSdXYkOinJnk=\""
+          "Value": "\"AhOSD6sndC0Pd8Nyaed8V13BiThICK7QYpdETekKUjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
+          "Value": "Sat, 14 Jun 2025 12:19:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5040,12 +5328,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p1o1RWHTxFuyx9DQ1Z95+Ws6SMNnTVdjSdXYkOinJnk="
+          "Value": "sha256-AhOSD6sndC0Pd8Nyaed8V13BiThICK7QYpdETekKUjc="
         }
       ]
     },
     {
-      "Route": "js/products.po6ec435ir.js",
+      "Route": "js/products.ycz0wc5l7o.js",
       "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/products.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5063,11 +5351,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p1o1RWHTxFuyx9DQ1Z95+Ws6SMNnTVdjSdXYkOinJnk=\""
+          "Value": "\"AhOSD6sndC0Pd8Nyaed8V13BiThICK7QYpdETekKUjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
+          "Value": "Sat, 14 Jun 2025 12:19:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5077,7 +5365,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "po6ec435ir"
+          "Value": "ycz0wc5l7o"
         },
         {
           "Name": "label",
@@ -5085,89 +5373,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p1o1RWHTxFuyx9DQ1Z95+Ws6SMNnTVdjSdXYkOinJnk="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "227"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "227"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 17:35:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-AhOSD6sndC0Pd8Nyaed8V13BiThICK7QYpdETekKUjc="
         }
       ]
     },

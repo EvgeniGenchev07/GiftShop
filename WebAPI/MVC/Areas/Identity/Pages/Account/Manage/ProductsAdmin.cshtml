@@ -1,0 +1,117 @@
+@page
+@model ProductsAdminModel
+@{
+ViewData["Title"] = "Manage Products";
+ViewData["ActivePage"] = ManageNavPages.ProductsAdmin;
+}
+
+<style>
+    .admin-header{
+        background: #f8f9fa;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 2.3rem;
+    }
+    .products-container {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        padding: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .products-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .products-table th {
+        text-align: left;
+        padding: 12px 15px;
+        background: #f8f9fa;
+        border-bottom: 2px solid #eee;
+    }
+
+    .products-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .product-actions .btn {
+        margin-right: 5px;
+        padding: 5px 10px;
+        font-size: 0.875rem;
+    }
+
+    .add-product-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    @@media (max-width: 768px) {
+        .products-table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+    .item-count{
+        margin-right: -0.5rem !important;
+    }
+</style>
+
+<div class="admin-header">
+    <h1><i style="color: #e63946" class="fas fa-box-open"></i> @ViewData["Title"]</h1>
+    <a asp-controller="Products" asp-action="Create" class="btn btn-primary add-product-btn">
+        <i class="fas fa-plus"></i> Add Product
+    </a>
+</div>
+
+<div class="products-container">
+    <table class="products-table">
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var product in Model.Products)
+        {
+        <tr>
+            <td>
+                <img src="@product.ImagePath" alt="" class="product-image">
+            </td>
+            <td>@product.Name</td>
+            <td>$@product.Price.ToString("N2")</td>
+            <td>@product.Quantity</td>
+            <td class="product-actions">
+                <a asp-action="Edit" asp-controller="Products" asp-route-id="@product.Id" class="btn btn-sm btn-primary">
+                    <i style="margin-right: 0.4rem" class="fas fa-edit"></i> Edit
+                </a>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@product.Id" class="d-inline">
+                    <button type="submit" class="btn btn-sm btn-primary"
+                            onclick="return confirm('Are you sure you want to delete this product?')">
+                        <i style="margin-right: 0.4rem" class="fas fa-trash-alt"></i> Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>

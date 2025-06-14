@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using BusinessLayer;
 using DataLayer;
-using System.Data.Entity;
+using Microsoft.AspNetCore.Authorization;
 
-namespace MVC.Areas.Identity.Pages.Account.Manage
-{
+    [Authorize(Roles = "User")]
     public partial class IndexModel : PageModel
     {
         private readonly UserManager<User> _userManager;
@@ -63,4 +57,3 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
             return Page();
         }
     }
-}

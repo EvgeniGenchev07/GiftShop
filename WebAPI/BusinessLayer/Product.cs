@@ -22,8 +22,7 @@ namespace BusinessLayer
         [MaxLength(50, ErrorMessage = "Name must not be more than 50 symbols!")]
         [MinLength(2, ErrorMessage = "Name must be at least 2 symbols!")]
         public string Name{ get; set; }
-
-       
+        
         public string ImagePath { get; set; }
 
         [Required]
@@ -33,18 +32,19 @@ namespace BusinessLayer
         [Required]
         [Range(0, 100, ErrorMessage = "Quantity must be in (0;100]")]
         public int Quantity { get; set; }
+        public ProductStatus Status { get; set; }
 
         public Product()
         {
 
         }
 
-        public Product(string name,string brand, decimal price, int quantity)
+        public Product(string name, decimal price, int quantity)
         {
             Name = name;
             Price = price;
             Quantity = quantity;
-            
+            Status = ProductStatus.InStock;
         }
 
     }

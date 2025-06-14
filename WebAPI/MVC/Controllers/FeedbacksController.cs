@@ -27,23 +27,7 @@ namespace MVC.Controllers
         {
             return View(await _context.ReadAll(true,true));
         }
-
-        // GET: Feedbacks/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var feedback = await _context.Read((int)id);
-            if (feedback == null)
-            {
-                return NotFound();
-            }
-
-            return View(feedback);
-        }
+        
 
         // GET: Feedbacks/Create
         public IActionResult Create()
@@ -65,84 +49,11 @@ namespace MVC.Controllers
                 {
                     feedback.User = user;
                 }
+                feedback.Created = DateTime.Now;
                 await _context.Create(feedback);
                 return RedirectToAction(nameof(Index));
             }
             return View(feedback);
         }
-
-        // GET: Feedbacks/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var feedback = await _context.Read((int)id);
-            if (feedback == null)
-            {
-                return NotFound();
-            }
-            return View(feedback);
-        }
-
-        // POST: Feedbacks/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Rating,Review")] Feedback feedback)
-        {
-            if (id != feedback.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    await _context.Update(feedback);
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    throw;
-                }
-                catch (ArgumentException)
-                {
-                    return NotFound();
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(feedback);
-        }
-
-        // GET: Feedbacks/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var feedback = await _context.Read((int)id);
-            if (feedback == null)
-            {
-                return NotFound();
-            }
-
-            return View(feedback);
-        }
-
-        // POST: Feedbacks/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await _context.Delete(id);
-            return RedirectToAction(nameof(Index));
-        }
-
     }
 }

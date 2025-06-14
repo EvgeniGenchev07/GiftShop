@@ -10,8 +10,8 @@ namespace BusinessLayer
     {
         None,
         Confirmed,
-        Delivered,
         InProgress,
+        Delivered,
         Canceled,
     }
 }

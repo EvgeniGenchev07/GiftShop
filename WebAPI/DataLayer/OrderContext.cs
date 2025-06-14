@@ -25,8 +25,16 @@ namespace DataLayer
                 if (productFromDb != null)
                 {
                     item.OrderedProducts[i].Product = productFromDb;
-                    if(item.OrderedProducts[i].Quantity <= item.OrderedProducts[i].Product.Quantity) 
-                        item.OrderedProducts[i].Product.Quantity -= item.OrderedProducts[i].Quantity;
+                    if (item.OrderedProducts[i].Quantity <= item.OrderedProducts[i].Product.Quantity)
+                    {
+                        Product product = item.OrderedProducts[i].Product;
+                        product.Quantity -= item.OrderedProducts[i].Quantity;
+                        if (product.Quantity <= 0)
+                        {
+                            product.Quantity = 0;
+                            product.Status = ProductStatus.OutOfStock;
+                        }
+                    }
                     else throw new ArgumentException($"Not enough quantity of product {item.OrderedProducts[i].Product.Name}!");
                 }
             }
@@ -57,7 +65,8 @@ namespace DataLayer
             IQueryable<Order> query = dbContext.Orders;
             if (useNavigationalProperties) query = query
             .Include(o => o.User)
-            .Include(o => o.OrderedProducts);
+            .Include(o => o.OrderedProducts)
+            .ThenInclude(op=>op.Product);
 
             if (isReadOnly) query = query.AsNoTrackingWithIdentityResolution();
 

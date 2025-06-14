@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using BusinessLayer;
 using DataLayer;
-using Microsoft.Extensions.Primitives;
+using Microsoft.AspNetCore.Authorization;
 
-namespace MVC.Areas.Identity.Pages.Account.Manage
-{
+    [Authorize(Roles = "User")]
     public class OrdersModel : PageModel
     {
         private readonly UserManager<User> _userManager;
@@ -59,4 +53,3 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
         }
 
     }
-}

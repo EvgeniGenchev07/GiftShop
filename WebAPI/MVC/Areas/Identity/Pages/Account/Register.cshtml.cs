@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using BusinessLayer;
+using DataLayer;
 using NuGet.Protocol;
 
 namespace MVC.Areas.Identity.Pages.Account
@@ -24,16 +25,18 @@ namespace MVC.Areas.Identity.Pages.Account
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
         private readonly ILogger<RegisterModel> _logger;
-        private readonly IEmailSender _emailSender;
+        private readonly IdentityContext _identityContext;
 
         public RegisterModel(
             UserManager<User> userManager,
             SignInManager<User> signInManager,
-            ILogger<RegisterModel> logger)
+            ILogger<RegisterModel> logger,
+            IdentityContext identityContext)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _identityContext = identityContext;
         }
 
         [BindProperty]
@@ -79,39 +82,18 @@ namespace MVC.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new User(Input.Email, Input.Username);
-                var result = await _userManager.CreateAsync(user, Input.Password);
-                Console.WriteLine(result.ToJson());
-                Console.WriteLine(result.Succeeded);
-                if (result.Succeeded)
+                try
                 {
+                    var user = new User(Input.Email, Input.Username);
+                    await _identityContext.CreateUserAsync(Input.Username,Input.Password, Input.Email,Role.User);
                     _logger.LogInformation("User created a new account with password.");
-#if false
-                    
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-#endif
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                    {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
-                    }
-                    else
-                    {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
-                    }
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return LocalRedirect(returnUrl);
                 }
-                foreach (var error in result.Errors)
+                catch (Exception e)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    ModelState.AddModelError(string.Empty, "Error creating new account.");
+                    throw;
                 }
             }
 

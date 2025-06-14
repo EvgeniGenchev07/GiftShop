@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using BusinessLayer;
 using DataLayer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
+[Authorize(Roles = "User")]
 public class FeedbacksModel : PageModel
 {
     private readonly IdentityContext _identityContext;

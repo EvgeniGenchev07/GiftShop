@@ -49,6 +49,18 @@
       "PackagePath": "staticwebassets/fonts/octin_sports_rg.ttf"
     },
     {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Bracelet.png",
+      "PackagePath": "staticwebassets/images/Bracelet.png"
+    },
+    {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code.png",
+      "PackagePath": "staticwebassets/images/Code.png"
+    },
+    {
+      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Code2.png",
+      "PackagePath": "staticwebassets/images/Code2.png"
+    },
+    {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/images/Console.png",
       "PackagePath": "staticwebassets/images/Console.png"
     },
@@ -151,10 +163,6 @@
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/products.js",
       "PackagePath": "staticwebassets/js/products.js"
-    },
-    {
-      "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
     },
     {
       "Id": "/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/wwwroot/lib/bootstrap/LICENSE",

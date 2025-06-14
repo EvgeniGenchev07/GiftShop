@@ -1,14 +1,11 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 using BusinessLayer;
+using Microsoft.AspNetCore.Authorization;
 
-namespace MVC.Areas.Identity.Pages.Account.Manage
-{
+[Authorize(Roles = "User")]
     public class DeletePersonalDataModel : PageModel
     {
         private readonly UserManager<User> _userManager;
@@ -81,4 +78,3 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
             return Redirect("~/");
         }
     }
-}

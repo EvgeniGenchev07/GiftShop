@@ -1,15 +1,14 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using BusinessLayer
-
 @inject SignInManager<User> SignInManager
-@inject UserManager<User> UserManager
+
 @{
     var currentArea = ViewContext.RouteData.Values["area"]?.ToString();
 }
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <a class="@(currentArea == "Identity" ? "active" : "")" asp-area="Identity" asp-page="/Account/Manage/Index" >
+    <a class="@(currentArea == "Identity" ? "active" : "")" asp-area="Identity" asp-page=@(User.IsInRole(Role.User.ToString())?"/Account/Manage/Index":"/Account/Manage/ProductsAdmin" )>
         <i class="fa fa-user" aria-hidden="true"></i>
         <span>Account</span>
     </a>

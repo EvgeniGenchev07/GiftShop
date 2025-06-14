@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 using BusinessLayer;
+using Microsoft.AspNetCore.Authorization;
 
-namespace MVC.Areas.Identity.Pages.Account.Manage
-{
+    [Authorize(Roles = "User")]
     public class DownloadPersonalDataModel : PageModel
     {
         private readonly UserManager<User> _userManager;
@@ -54,4 +48,3 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
             return new FileContentResult(JsonSerializer.SerializeToUtf8Bytes(personalData), "application/json");
         }
     }
-}

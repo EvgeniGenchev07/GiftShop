@@ -1,6 +1,6 @@
 :root {
-    --primary: #4361ee;
-    --primary-light: #3a0ca3;
+    --primary: #e63946;
+    --primary-light: #ba2430;
     --text: #2b2d42;
     --light: #f8f9fa;
     --border: #e0e0e0;
@@ -123,7 +123,7 @@ body {
 .product-image {
     width: 80px;
     height: 80px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
 }
 

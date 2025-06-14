@@ -21,7 +21,10 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
         public static string PersonalData => "PersonalData";
 
         public static string Orders => "Orders";
+        public static string OrdersAdmin => "OrdersAdmin";
         public static string Feedbacks => "Feedbacks";
+        public static string FeedbacksAdmin => "FeedbacksAdmin";
+        public static string ProductsAdmin => "ProductsAdmin";
 
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
 
@@ -32,11 +35,14 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
         public static string DeletePersonalDataNavClass(ViewContext viewContext) => PageNavClass(viewContext, DeletePersonalData);
 
         public static string OrdersNavClass(ViewContext viewContext) => PageNavClass(viewContext, Orders);
+        public static string OrdersAdminNavClass(ViewContext viewContext) => PageNavClass(viewContext, OrdersAdmin);
         public static string FeedbacksNavClass(ViewContext viewContext) => PageNavClass(viewContext, Feedbacks);
+        public static string FeedbacksAdminNavClass(ViewContext viewContext) => PageNavClass(viewContext, FeedbacksAdmin);
 
         public static string PersonalDataNavClass(ViewContext viewContext) => PageNavClass(viewContext, PersonalData);
 
         public static string AccountDetailsNavClass(ViewContext viewContext) => PageNavClass(viewContext, AccountDetails);
+        public static string ProductsAdminNavClass(ViewContext viewContext) => PageNavClass(viewContext, ProductsAdmin);
 
         private static string PageNavClass(ViewContext viewContext, string page)
         {

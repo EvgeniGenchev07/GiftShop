@@ -26,29 +26,7 @@ namespace MVC.Controllers
             _context = context;
             _authentication = identity;
         }
-
-        // GET: Orders
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.ReadAll());
-        }
-
-        // GET: Orders/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var order = await _context.Read((int)id);
-            if (order == null)
-            {
-                return NotFound();
-            }
-
-            return View(order);
-        }
+        
         [HttpPost]
         public async Task<IActionResult> ProcessOrder([FromBody] Dictionary<string,object> data)
         {
@@ -85,6 +63,8 @@ namespace MVC.Controllers
                 return View();
             }
         }
+        
+        [Authorize(Roles = "User")]
         public IActionResult Checkout()
         {
             try
@@ -97,8 +77,9 @@ namespace MVC.Controllers
                 return RedirectToAction(nameof(Create));
             }
         }
+        
         [HttpPost]
-        //[Authorize(Roles = "User")]
+        [Authorize(Roles = "User")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Checkout(IFormCollection keyValuePairs)
         {
@@ -127,7 +108,7 @@ namespace MVC.Controllers
             }
             
         }
-
+        [Authorize(Roles = "User")]
         public IActionResult Confirmed()
         {
             var model = new OrderSuccess
@@ -140,85 +121,5 @@ namespace MVC.Controllers
 
             return View(model);
         }
-
-        // GET: Orders/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var order = await _context.Read((int)id);
-            if (order == null)
-            {
-                return NotFound();
-            }
-            return View(order);
-        }
-
-        // POST: Orders/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Address,PhoneNumber,Price")] Order order)
-        {
-            if (id != order.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    await _context.Update(order);
-
-                }
-                catch (ArgumentException) 
-                {
-                    return NotFound();
-                }
-
-                return RedirectToAction(nameof(Index));
-            }
-            return View(order);
-        }
-
-        // GET: Orders/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var order = await _context.Read((int)id);
-                
-            if (order == null)
-            {
-                return NotFound();
-            }
-
-            return View(order);
-        }
-
-        // POST: Orders/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var order = await _context.Read(id);
-            if (order != null)
-            {
-                 await _context.Delete(order.Id);
-            }
-
-            
-            return RedirectToAction(nameof(Index));
-        }
-
-       
     }
 }

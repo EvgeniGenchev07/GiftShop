@@ -1,12 +1,10 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 using BusinessLayer;
+using Microsoft.AspNetCore.Authorization;
 
-namespace MVC.Areas.Identity.Pages.Account.Manage
-{
+    [Authorize(Roles = "User")]
     public class PersonalDataModel : PageModel
     {
         private readonly UserManager<User> _userManager;
@@ -31,4 +29,3 @@ namespace MVC.Areas.Identity.Pages.Account.Manage
             return Page();
         }
     }
-}

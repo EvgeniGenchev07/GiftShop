@@ -72,6 +72,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRmVlZGJhY2tzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Areas/Identity/Pages/Account/Manage/FeedbacksAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRmVlZGJhY2tzQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,8 +84,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Areas/Identity/Pages/Account/Manage/OrdersAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvT3JkZXJzQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Areas/Identity/Pages/Account/Manage/ProductsAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvUHJvZHVjdHNBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
@@ -160,20 +172,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Views/Orders/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Views/Products/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Views/Products/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/evgeni/RiderProjects/GiftShop/WebAPI/MVC/Views/Products/Edit.cshtml]
