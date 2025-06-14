@@ -23,17 +23,14 @@ namespace MVC.Areas.Identity.Pages.Account
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IdentityContext _identityContext;
 
         public RegisterModel(
-            UserManager<User> userManager,
             SignInManager<User> signInManager,
             ILogger<RegisterModel> logger,
             IdentityContext identityContext)
         {
-            _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _identityContext = identityContext;
@@ -41,10 +38,6 @@ namespace MVC.Areas.Identity.Pages.Account
 
         [BindProperty]
         public InputModel Input { get; set; }
-
-        public string ReturnUrl { get; set; }
-
-        public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
         public class InputModel
         {
@@ -70,34 +63,28 @@ namespace MVC.Areas.Identity.Pages.Account
 
         }
 
-        public async Task OnGetAsync(string returnUrl = null)
+        public async Task<IActionResult> OnPostAsync()
         {
-            ReturnUrl = returnUrl;
-            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-        }
-
-        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
-        {
-            returnUrl ??= Url.Content("~/");
-            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var user = new User(Input.Email, Input.Username);
-                    await _identityContext.CreateUserAsync(Input.Username,Input.Password, Input.Email,Role.User);
+                    await _identityContext.CreateUserAsync(Input.Username, Input.Password, Input.Email, Role.User);
                     _logger.LogInformation("User created a new account with password.");
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return LocalRedirect(returnUrl);
+
+                    var createdUser = await _signInManager.UserManager.FindByEmailAsync(Input.Email);
+            
+                    await _signInManager.SignInAsync(createdUser, isPersistent: false);
+            
+                    return LocalRedirect("/");
                 }
                 catch (Exception e)
                 {
                     ModelState.AddModelError(string.Empty, "Error creating new account.");
-                    throw;
+                    _logger.LogError(e, "Error during registration");
+                    return Page();
                 }
             }
-
-            // If we got this far, something failed, redisplay form
             return Page();
         }
     }
